@@ -126,7 +126,6 @@ export function ProjectCard({ project }: Props) {
                     key={`${project.slug}-${activePage}`}
                     url={getScreenshotUrl(project.liveUrl!, currentPage.path)}
                     alt={`${project.name} — ${currentPage.label}`}
-                    emoji={emojiMap[project.slug] || "📦"}
                     projectName={project.name}
                   />
 
