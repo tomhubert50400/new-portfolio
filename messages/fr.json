@@ -75,6 +75,6 @@
     "restapi": { "description": "Design d'API, authentification, rate limiting, documentation. Services RESTful web et mobile." },
     "auth": { "description": "JWT, OAuth, gestion de sessions, contrôle d'accès par rôle. Flux d'authentification sécurisés." }
   },
-  "contact": { "title": "Une idée ?", "titleHighlight": "Construisons-la ensemble.", "form": { "name": "Nom", "email": "Email", "message": "Message", "send": "Envoyer" } },
+  "contact": { "title": "Une idée ?", "titleHighlight": "Construisons-la ensemble.", "form": { "name": "Nom *", "company": "Société", "email": "Email *", "message": "Message *", "send": "Envoyer" } },
   "footer": { "copyright": "Tous droits réservés." }
 }
