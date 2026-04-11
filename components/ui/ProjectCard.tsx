@@ -17,6 +17,12 @@ const emojiMap: Record<string, string> = {
 export function ProjectCard({ project }: Props) {
   const t = useTranslations();
   const [expanded, setExpanded] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  const screenshotUrl = project.liveUrl && project.liveUrl !== "#"
+    ? `https://api.microlink.io/?url=${encodeURIComponent(project.liveUrl)}&screenshot=true&meta=false&embed=screenshot.url&type=png&viewport.width=1280&viewport.height=800`
+    : null;
 
   return (
     <motion.div
@@ -54,7 +60,7 @@ export function ProjectCard({ project }: Props) {
 
       {/* Expanded content */}
       <AnimatePresence>
-        {expanded && project.liveUrl && project.liveUrl !== "#" && (
+        {expanded && screenshotUrl && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
@@ -63,8 +69,8 @@ export function ProjectCard({ project }: Props) {
             className="overflow-hidden"
           >
             <div className="border-t border-card-border px-5 pb-5 pt-4">
-              {/* Iframe container */}
-              <div className="overflow-hidden rounded-lg border border-card-border bg-surface">
+              {/* Browser chrome + screenshot */}
+              <div className="overflow-hidden rounded-lg border border-card-border">
                 {/* Fake browser bar */}
                 <div className="flex items-center gap-2 border-b border-card-border bg-bg px-3 py-2">
                   <div className="flex gap-1.5">
@@ -76,27 +82,77 @@ export function ProjectCard({ project }: Props) {
                     {project.liveUrl}
                   </div>
                 </div>
-                {/* Iframe */}
-                <iframe
-                  src={project.liveUrl}
-                  title={project.name}
-                  className="h-[400px] w-full"
-                  sandbox="allow-scripts allow-same-origin allow-popups"
-                  loading="lazy"
-                />
+
+                {/* Screenshot */}
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block cursor-pointer group"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Loading skeleton */}
+                  {!imgLoaded && !imgError && (
+                    <div className="flex h-[400px] items-center justify-center bg-surface">
+                      <div className="flex flex-col items-center gap-3">
+                        <div className="h-6 w-6 animate-spin rounded-full border-2 border-card-border border-t-accent-cyan" />
+                        <span className="text-xs text-text-muted">Loading preview...</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Error fallback */}
+                  {imgError && (
+                    <div className="flex h-[300px] items-center justify-center bg-surface">
+                      <div className="flex flex-col items-center gap-2 text-text-muted">
+                        <span className="text-3xl">{emojiMap[project.slug] || "📦"}</span>
+                        <span className="text-sm">Click to visit {project.name}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Actual screenshot */}
+                  <img
+                    src={screenshotUrl}
+                    alt={`Preview of ${project.name}`}
+                    className={`w-full object-cover object-top transition-opacity ${imgLoaded ? "opacity-100" : "opacity-0 h-0"}`}
+                    style={imgLoaded ? { maxHeight: 500 } : undefined}
+                    onLoad={() => setImgLoaded(true)}
+                    onError={() => setImgError(true)}
+                  />
+
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-bg/60 opacity-0 transition-opacity group-hover:opacity-100">
+                    <span className="rounded-pill bg-text-primary px-5 py-2.5 text-sm font-medium text-bg">
+                      Visit Site ↗
+                    </span>
+                  </div>
+                </a>
               </div>
 
               {/* Link below */}
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 rounded-pill border border-card-border bg-surface px-4 py-2 text-sm text-text-secondary transition-colors hover:border-accent-cyan/50 hover:text-text-primary"
-                onClick={(e) => e.stopPropagation()}
-              >
-                Visit Site
-                <span>↗</span>
-              </a>
+              <div className="mt-4 flex items-center gap-3">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-pill border border-card-border bg-surface px-4 py-2 text-sm text-text-secondary transition-colors hover:border-accent-cyan/50 hover:text-text-primary"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Visit Site <span>↗</span>
+                </a>
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-pill border border-card-border bg-surface px-4 py-2 text-sm text-text-secondary transition-colors hover:border-accent-violet/50 hover:text-text-primary"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    GitHub <span>↗</span>
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         )}
