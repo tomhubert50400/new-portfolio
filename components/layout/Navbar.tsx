@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
-const navLinks = ["work", "about", "experience", "techStack"] as const;
+const navLinks = ["about", "experience", "work", "techStack"] as const;
 
 export function Navbar() {
   const t = useTranslations("nav");
