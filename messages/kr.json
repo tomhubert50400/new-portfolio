@@ -31,6 +31,6 @@
     "restapi": { "description": "API 설계, 인증, 속도 제한, 문서화. 웹 및 모바일 클라이언트를 위한 RESTful 서비스." },
     "auth": { "description": "JWT, OAuth, 세션 관리, 역할 기반 접근 제어. 프로덕션 앱을 위한 보안 인증 흐름." }
   },
-  "contact": { "title": "아이디어가 있으신가요?", "titleHighlight": "함께 만들어 봅시다.", "form": { "name": "이름", "email": "이메일", "message": "메시지", "send": "메시지 보내기" } },
+  "contact": { "title": "아이디어가 있으신가요?", "titleHighlight": "함께 만들어 봅시다.", "form": { "name": "이름 *", "company": "회사", "email": "이메일 *", "message": "메시지 *", "send": "메시지 보내기" } },
   "footer": { "copyright": "모든 권리 보유." }
 }
