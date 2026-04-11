@@ -34,6 +34,7 @@ export const projects: Project[] = [
     descriptionKey: "projects.woeve.description",
     tags: ["HTML", "CSS", "JavaScript", "Vercel"],
     image: "/images/projects/woeve.png",
-    liveUrl: "#",
+    liveUrl: "https://woeve.eu/",
+    githubUrl: "https://github.com/tomhubert50400",
   },
 ];
