@@ -12,8 +12,6 @@ export const projects: Project[] = [
     pages: [
       { label: "Home", path: "/" },
       { label: "Browse Cafes", path: "/cafes" },
-      { label: "Map", path: "/map" },
-      { label: "For You", path: "/for-you" },
     ],
   },
   {
