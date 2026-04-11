@@ -14,7 +14,7 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative overflow-hidden px-6 py-20 md:py-32">
+    <section className="relative overflow-hidden px-6 py-10 md:py-16">
       <ParticleField />
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:gap-16">
         <div className="flex-1">
