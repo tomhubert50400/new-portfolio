@@ -13,7 +13,9 @@ export function Navbar() {
 
   function scrollTo(id: string) {
     setMobileOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
   }
 
   return (
