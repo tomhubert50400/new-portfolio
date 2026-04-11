@@ -13,7 +13,7 @@ export function Experience() {
     <section id="experience" className="px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <SectionHeader title={t("title")} />
-        <StaggerContainer className="grid gap-4 sm:grid-cols-2">
+        <StaggerContainer className="grid grid-rows-subgrid gap-4 sm:grid-cols-2">
           {experiences.map((exp) => (
             <StaggerItem key={exp.company}>
               <ExperienceCard experience={exp} />
