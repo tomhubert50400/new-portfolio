@@ -2,7 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import { Terminal } from "@/components/ui/Terminal";
+
+const ParticleField = dynamic(
+  () => import("@/components/three/ParticleField").then((m) => m.ParticleField),
+  { ssr: false }
+);
 
 export function Hero() {
   const t = useTranslations("hero");
