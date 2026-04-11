@@ -17,7 +17,7 @@ export function Contact() {
         <ScrollReveal delay={0.1}><div className="mt-10"><ContactForm /></div></ScrollReveal>
         <ScrollReveal delay={0.2}>
           <div className="mt-10 flex justify-center gap-4">
-            {[{ href: "https://github.com", label: "GitHub" }, { href: "https://linkedin.com", label: "LinkedIn" }, { href: "https://twitter.com", label: "X" }].map((link) => (
+            {[{ href: "https://github.com/tomhubert50400", label: "GitHub" }, { href: "https://www.linkedin.com/in/tom-hubert/", label: "LinkedIn" }].map((link) => (
               <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="rounded-full border border-card-border px-4 py-2 text-sm text-text-muted transition-colors hover:border-accent-cyan/50 hover:text-text-primary">{link.label}</a>
             ))}
           </div>
