@@ -15,7 +15,7 @@ export function ExperienceCard({ experience }: Props) {
     <motion.div
       layout
       onClick={() => setExpanded(!expanded)}
-      className="cursor-pointer rounded-card border border-card-border bg-card p-5 transition-colors hover:border-opacity-60"
+      className="flex h-full cursor-pointer flex-col rounded-card border border-card-border bg-card p-5 transition-colors hover:border-opacity-60"
       style={{ borderColor: expanded ? experience.color + "40" : undefined }}
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300, damping: 25 }}
