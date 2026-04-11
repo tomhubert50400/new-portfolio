@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
 @theme inline {
   /* Fonts */
   --font-sans: var(--font-geist-sans);
