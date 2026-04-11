@@ -1,20 +1,27 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { useTypingEffect } from "@/hooks/useTypingEffect";
 
 const command = "cat profile.json";
-const jsonContent = `{
+
+function buildJson(t: (key: string) => string) {
+  return `{
   "name": "Tom Hubert",
-  "role": "Fullstack Developer",
-  "experience": "6 years",
-  "location": "Seoul \u{1F1F0}\u{1F1F7}",
+  "role": "${t("terminal.role")}",
+  "experience": "${t("terminal.experience")}",
+  "location": "${t("terminal.location")} 🇰🇷",
   "skills": ["React", "Next.js", "Supabase",
              "TypeScript", "Tailwind"],
-  "passion": "Building interactive UIs"
+  "passion": "${t("terminal.passion")}"
 }`;
+}
 
 export function Terminal() {
+  const t = useTranslations("hero");
+  const jsonContent = buildJson(t);
+
   const { displayed: cmdText, isDone: cmdDone } = useTypingEffect(command, 50);
   const { displayed: jsonText, isDone: jsonDone } = useTypingEffect(jsonContent, 15, command.length * 50 + 500);
   const [dotsHovered, setDotsHovered] = useState(false);
