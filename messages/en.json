@@ -90,9 +90,10 @@
     "title": "Have an idea?",
     "titleHighlight": "Let's build it together.",
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
+      "name": "Name *",
+      "company": "Company",
+      "email": "Email *",
+      "message": "Message *",
       "send": "Send Message"
     }
   },
