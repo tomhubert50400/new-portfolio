@@ -25,6 +25,8 @@ export const projects: Project[] = [
     descriptionKey: "projects.draftPredictions.description",
     tags: ["React", "API", "Data Visualization"],
     image: "/images/projects/draft-predictions.png",
+    liveUrl: "https://draft.zerqua.com/",
+    githubUrl: "https://github.com/tomhubert50400",
   },
   {
     slug: "woeve",
