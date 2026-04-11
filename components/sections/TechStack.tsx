@@ -70,24 +70,19 @@ export function TechStack() {
   );
 }
 
-function MarqueeRow({ skills: items, direction, speed, selected, onSelect }: {
+function MarqueeRow({ skills: items, direction, selected, onSelect }: {
   skills: Skill[];
   direction: "left" | "right";
-  speed: number;
   selected: Skill | null;
   onSelect: (s: Skill) => void;
 }) {
-  const anim = direction === "left" ? "marquee-left" : "marquee-right";
+  const animClass = direction === "left" ? "animate-marquee-left" : "animate-marquee-right";
 
   return (
     <div className="relative mb-3 group/marquee">
       <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-bg to-transparent" />
       <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-bg to-transparent" />
-      <div
-        className="flex gap-3 group-hover/marquee:[animation-play-state:paused]"
-        style={{ animation: `${anim} ${speed}s linear infinite`, width: "max-content" }}
-      >
-        {/* Repeat 3x to ensure seamless loop on wide screens */}
+      <div className={`flex w-max gap-3 ${animClass} group-hover/marquee:[animation-play-state:paused]`}>
         {[...items, ...items, ...items].map((skill, i) => (
           <SkillBadge
             key={`${skill.name}-${i}`}
