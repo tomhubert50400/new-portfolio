@@ -58,7 +58,7 @@ export function Terminal() {
             )}
           </span>
         </div>
-        <span className="ml-2 text-xs text-text-muted">developer@portfolio:~</span>
+        <span className="ml-2 text-xs text-text-muted">tomhubert@portfolio:~</span>
       </div>
       <div className="p-4 leading-relaxed">
         <div className="flex gap-2">
