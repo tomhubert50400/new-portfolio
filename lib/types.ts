@@ -6,6 +6,7 @@ export interface Project {
   image?: string;
   liveUrl?: string;
   githubUrl?: string;
+  pages?: { label: string; path: string }[];
 }
 
 export interface Experience {
