@@ -29,10 +29,10 @@ export function TechStack() {
       {/* Desktop: double marquee */}
       <div className="hidden md:block">
         {/* Row 1 — scrolls left */}
-        <MarqueeRow skills={topRow} direction="left" speed={30} selected={selected} onSelect={handleClick} />
+        <MarqueeRow skills={topRow} direction="left" selected={selected} onSelect={handleClick} />
 
         {/* Row 2 — scrolls right */}
-        <MarqueeRow skills={bottomRow} direction="right" speed={35} selected={selected} onSelect={handleClick} />
+        <MarqueeRow skills={bottomRow} direction="right" selected={selected} onSelect={handleClick} />
 
         {/* Detail panel */}
         <div className="px-6">
