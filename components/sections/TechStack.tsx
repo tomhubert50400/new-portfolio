@@ -20,7 +20,7 @@ export function TechStack() {
   }
 
   return (
-    <section id="techStack" className="py-20 overflow-hidden">
+    <section id="techStack" className="py-10 overflow-hidden">
       <div className="px-6">
         <SectionHeader title={tSection("title")} subtitle={tSection("subtitle")} centered />
       </div>
