@@ -20,7 +20,9 @@ export function About() {
         <div className="flex flex-col items-center gap-10 md:flex-row">
           <ScrollReveal className="flex-shrink-0">
             <div className="h-32 w-32 rounded-2xl bg-gradient-to-br from-accent-cyan via-accent-violet to-accent-pink p-0.5">
-              <div className="flex h-full w-full items-center justify-center rounded-2xl bg-bg text-3xl font-extrabold text-text-primary">TH</div>
+              <div className="h-full w-full overflow-hidden rounded-2xl">
+                <img src="/images/tom2.jpg" alt="Tom Hubert" className="h-full w-full object-cover" />
+              </div>
             </div>
           </ScrollReveal>
           <div className="flex-1">
