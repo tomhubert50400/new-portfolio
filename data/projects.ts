@@ -9,6 +9,12 @@ export const projects: Project[] = [
     image: "/images/projects/cafes-seoul.png",
     liveUrl: "https://cafesinseoul.com/",
     githubUrl: "https://github.com/tomhubert50400",
+    pages: [
+      { label: "Home", path: "/" },
+      { label: "Browse Cafes", path: "/cafes" },
+      { label: "Map", path: "/map" },
+      { label: "For You", path: "/for-you" },
+    ],
   },
   {
     slug: "bouldrr",
@@ -18,6 +24,11 @@ export const projects: Project[] = [
     image: "/images/projects/bouldrr.png",
     liveUrl: "https://bouldrr.com/",
     githubUrl: "https://github.com/tomhubert50400",
+    pages: [
+      { label: "Home", path: "/" },
+      { label: "Search", path: "/en/search" },
+      { label: "New Session", path: "/en/session/new" },
+    ],
   },
   {
     slug: "draft-predictions",
@@ -27,6 +38,9 @@ export const projects: Project[] = [
     image: "/images/projects/draft-predictions.png",
     liveUrl: "https://draft.zerqua.com/",
     githubUrl: "https://github.com/tomhubert50400",
+    pages: [
+      { label: "Home", path: "/" },
+    ],
   },
   {
     slug: "woeve",
@@ -36,5 +50,10 @@ export const projects: Project[] = [
     image: "/images/projects/woeve.png",
     liveUrl: "https://woeve.eu/",
     githubUrl: "https://github.com/tomhubert50400",
+    pages: [
+      { label: "Home", path: "/" },
+      { label: "Studio", path: "/#whatwedo" },
+      { label: "Projects", path: "/#projets" },
+    ],
   },
 ];
