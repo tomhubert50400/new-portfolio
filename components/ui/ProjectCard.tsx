@@ -16,7 +16,7 @@ const emojiMap: Record<string, string> = {
 
 function getScreenshotUrl(baseUrl: string, path: string) {
   const fullUrl = path === "/" ? baseUrl : `${baseUrl.replace(/\/$/, "")}${path}`;
-  return `https://api.microlink.io/?url=${encodeURIComponent(fullUrl)}&screenshot=true&meta=false&embed=screenshot.url&type=png&viewport.width=1280&viewport.height=800`;
+  return `https://api.microlink.io/?url=${encodeURIComponent(fullUrl)}&screenshot=true&meta=false&embed=screenshot.url&type=png&viewport.width=1280&viewport.height=800&waitForTimeout=4000`;
 }
 
 export function ProjectCard({ project }: Props) {
