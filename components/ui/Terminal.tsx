@@ -27,17 +27,26 @@ export function Terminal() {
           onMouseEnter={() => setDotsHovered(true)}
           onMouseLeave={() => setDotsHovered(false)}
         >
-          <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-red-500">
-            {dotsHovered && <span className="text-[8px] font-bold leading-none text-red-900">×</span>}
-          </span>
-          <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-yellow-500">
-            {dotsHovered && <span className="text-[8px] font-bold leading-none text-yellow-900">−</span>}
-          </span>
-          <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-green-500">
+          <span className="relative flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[#ff5f57]">
             {dotsHovered && (
-              <svg width="6" height="6" viewBox="0 0 8 8" className="text-green-900">
-                <path d="M1 5.5L1 7L2.5 7" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M7 2.5L7 1L5.5 1" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              <svg width="8" height="8" viewBox="0 0 8 8">
+                <path d="M1.5 1.5L6.5 6.5M6.5 1.5L1.5 6.5" stroke="#4a0002" strokeWidth="1.3" strokeLinecap="round" />
+              </svg>
+            )}
+          </span>
+          <span className="relative flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[#febc2e]">
+            {dotsHovered && (
+              <svg width="8" height="8" viewBox="0 0 8 8">
+                <path d="M1.5 4L6.5 4" stroke="#995700" strokeWidth="1.3" strokeLinecap="round" />
+              </svg>
+            )}
+          </span>
+          <span className="relative flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[#28c840]">
+            {dotsHovered && (
+              <svg width="8" height="8" viewBox="0 0 10 10">
+                <path d="M2 6.5L2 8L3.5 8" stroke="#006500" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M8 3.5L8 2L6.5 2" stroke="#006500" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M2 8L8 2" stroke="#006500" strokeWidth="1.2" strokeLinecap="round" />
               </svg>
             )}
           </span>
