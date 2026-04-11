@@ -35,8 +35,9 @@ export function Terminal() {
           </span>
           <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-green-500">
             {dotsHovered && (
-              <svg width="6" height="6" viewBox="0 0 6 6" className="text-green-900">
-                <path d="M0.5 3.5L2 5.5L5.5 0.5" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              <svg width="6" height="6" viewBox="0 0 8 8" className="text-green-900">
+                <path d="M1 5.5L1 7L2.5 7" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M7 2.5L7 1L5.5 1" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             )}
           </span>
