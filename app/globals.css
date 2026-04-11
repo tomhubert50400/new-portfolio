@@ -44,7 +44,3 @@
     @apply bg-gradient-to-r from-accent-cyan via-accent-violet to-accent-pink bg-clip-text text-transparent;
   }
 }
-
-@media (pointer: fine) {
-  * { cursor: none !important; }
-}
