@@ -11,8 +11,8 @@ export function Footer() {
         <p className="text-sm text-text-muted">{t("copyright")}</p>
         <div className="flex items-center gap-6">
           <div className="flex gap-3">
-            {["GitHub", "LinkedIn", "X"].map((name) => (
-              <a key={name} href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-text-muted transition-colors hover:text-text-primary">{name}</a>
+            {[{ name: "GitHub", href: "https://github.com/tomhubert50400" }, { name: "LinkedIn", href: "https://www.linkedin.com/in/tom-hubert/" }].map(({ name, href }) => (
+              <a key={name} href={href} target="_blank" rel="noopener noreferrer" className="text-sm text-text-muted transition-colors hover:text-text-primary">{name}</a>
             ))}
           </div>
           <LanguageSwitcher />
