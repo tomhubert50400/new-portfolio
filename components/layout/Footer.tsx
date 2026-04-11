@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="border-t border-card-border px-6 py-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-        <p className="text-sm text-text-muted">{t("copyright")}</p>
+        <p className="text-sm text-text-muted">© {new Date().getFullYear()} Tom Hubert. {t("copyright")}</p>
         <div className="flex items-center gap-6">
           <div className="flex gap-3">
             {[{ name: "GitHub", href: "https://github.com/tomhubert50400" }, { name: "LinkedIn", href: "https://www.linkedin.com/in/tom-hubert/" }].map(({ name, href }) => (
