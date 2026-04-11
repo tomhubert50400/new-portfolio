@@ -32,5 +32,5 @@
     "auth": { "description": "JWT, OAuth, 세션 관리, 역할 기반 접근 제어. 프로덕션 앱을 위한 보안 인증 흐름." }
   },
   "contact": { "title": "아이디어가 있으신가요?", "titleHighlight": "함께 만들어 봅시다.", "form": { "name": "이름", "email": "이메일", "message": "메시지", "send": "메시지 보내기" } },
-  "footer": { "copyright": "© 2026 Tom Hubert. All rights reserved." }
+  "footer": { "copyright": "모든 권리 보유." }
 }
