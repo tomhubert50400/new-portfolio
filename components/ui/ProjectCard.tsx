@@ -61,11 +61,11 @@ export function ProjectCard({ project }: Props) {
         </div>
         <div className="hidden sm:block">
           <motion.span
-            animate={{ rotate: expanded ? 180 : 0 }}
+            animate={{ rotate: expanded ? 90 : 0 }}
             transition={{ duration: 0.2 }}
             className="inline-block text-text-muted text-lg"
           >
-            ↓
+            ›
           </motion.span>
         </div>
       </button>
