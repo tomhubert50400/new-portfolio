@@ -17,13 +17,30 @@ const jsonContent = `{
 export function Terminal() {
   const { displayed: cmdText, isDone: cmdDone } = useTypingEffect(command, 50);
   const { displayed: jsonText, isDone: jsonDone } = useTypingEffect(jsonContent, 15, command.length * 50 + 500);
+  const [dotsHovered, setDotsHovered] = useState(false);
 
   return (
     <div className="overflow-hidden rounded-xl border border-card-border bg-surface font-mono text-sm shadow-2xl">
       <div className="flex items-center gap-2 border-b border-card-border px-4 py-3">
-        <span className="h-3 w-3 rounded-full bg-red-500" />
-        <span className="h-3 w-3 rounded-full bg-yellow-500" />
-        <span className="h-3 w-3 rounded-full bg-green-500" />
+        <div
+          className="flex items-center gap-2"
+          onMouseEnter={() => setDotsHovered(true)}
+          onMouseLeave={() => setDotsHovered(false)}
+        >
+          <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-red-500">
+            {dotsHovered && <span className="text-[8px] font-bold leading-none text-red-900">×</span>}
+          </span>
+          <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-yellow-500">
+            {dotsHovered && <span className="text-[8px] font-bold leading-none text-yellow-900">−</span>}
+          </span>
+          <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-green-500">
+            {dotsHovered && (
+              <svg width="6" height="6" viewBox="0 0 6 6" className="text-green-900">
+                <path d="M0.5 3.5L2 5.5L5.5 0.5" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            )}
+          </span>
+        </div>
         <span className="ml-2 text-xs text-text-muted">developer@portfolio:~</span>
       </div>
       <div className="p-4 leading-relaxed">
