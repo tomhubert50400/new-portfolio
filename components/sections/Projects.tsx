@@ -10,7 +10,7 @@ export function Projects() {
   const t = useTranslations("projects");
 
   return (
-    <section id="projects" className="px-6 py-20">
+    <section id="projects" className="px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <SectionHeader title={t("title")} subtitle={t("subtitle")} />
         <StaggerContainer className="flex flex-col gap-4">
