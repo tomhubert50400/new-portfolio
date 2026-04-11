@@ -15,7 +15,7 @@ export function Experience() {
         <SectionHeader title={t("title")} />
         <StaggerContainer className="grid gap-4 sm:grid-cols-2">
           {experiences.map((exp) => (
-            <StaggerItem key={exp.company}>
+            <StaggerItem key={exp.company} className="h-full">
               <ExperienceCard experience={exp} />
             </StaggerItem>
           ))}
