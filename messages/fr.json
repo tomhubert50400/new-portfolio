@@ -76,5 +76,5 @@
     "auth": { "description": "JWT, OAuth, gestion de sessions, contrôle d'accès par rôle. Flux d'authentification sécurisés." }
   },
   "contact": { "title": "Une idée ?", "titleHighlight": "Construisons-la ensemble.", "form": { "name": "Nom", "email": "Email", "message": "Message", "send": "Envoyer" } },
-  "footer": { "copyright": "© 2026 Tom Hubert. Tous droits réservés." }
+  "footer": { "copyright": "Tous droits réservés." }
 }
