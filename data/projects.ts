@@ -16,8 +16,8 @@ export const projects: Project[] = [
     descriptionKey: "projects.bouldrr.description",
     tags: ["Next.js", "Supabase", "Zustand", "Recharts"],
     image: "/images/projects/bouldrr.png",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://bouldrr.com/",
+    githubUrl: "https://github.com/tomhubert50400",
   },
   {
     slug: "draft-predictions",
