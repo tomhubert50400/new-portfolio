@@ -21,7 +21,7 @@ export function About() {
           <ScrollReveal className="flex-shrink-0">
             <div className="h-32 w-32 rounded-2xl bg-gradient-to-br from-accent-cyan via-accent-violet to-accent-pink p-0.5">
               <div className="h-full w-full overflow-hidden rounded-2xl">
-                <img src="/images/tom2.jpg" alt="Tom Hubert" className="h-full w-full object-cover object-[center_25%] scale-150" />
+                <img src="/images/tom2.jpg" alt="Tom Hubert" className="h-full w-full object-cover object-[60%_35%] scale-150" />
               </div>
             </div>
           </ScrollReveal>
