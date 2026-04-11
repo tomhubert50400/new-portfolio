@@ -61,6 +61,12 @@ export function ContactForm() {
         {status === "sending" ? "..." : status === "sent" ? "✓" : t("send")}
       </button>
       {status === "error" && <p className="text-center text-xs text-red-400">Something went wrong. Try again.</p>}
+      <p className="text-center text-[10px] text-text-muted/50">
+        Protected by reCAPTCHA —{" "}
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline">Privacy</a>
+        {" · "}
+        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline">Terms</a>
+      </p>
     </form>
   );
 }
