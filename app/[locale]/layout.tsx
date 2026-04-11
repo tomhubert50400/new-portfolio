@@ -22,9 +22,11 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <Navbar />
-      <main className="min-h-screen pt-16">{children}</main>
-      <Footer />
+      <RecaptchaProvider>
+        <Navbar />
+        <main className="min-h-screen pt-16">{children}</main>
+        <Footer />
+      </RecaptchaProvider>
     </NextIntlClientProvider>
   );
 }
