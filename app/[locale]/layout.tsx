@@ -23,6 +23,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider messages={messages}>
       <Navbar />
       <main className="min-h-screen pt-16">{children}</main>
+      <Footer />
     </NextIntlClientProvider>
   );
 }
