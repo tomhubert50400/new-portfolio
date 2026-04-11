@@ -38,8 +38,17 @@ export function ProjectCard({ project }: Props) {
         onClick={() => setExpanded(!expanded)}
         className="flex w-full flex-col gap-4 p-5 text-left sm:flex-row sm:items-center"
       >
-        <div className="flex h-20 w-full flex-shrink-0 items-center justify-center rounded-lg bg-surface text-2xl sm:h-[72px] sm:w-[120px]">
-          {emojiMap[project.slug] || "📦"}
+        <div className="h-20 w-full flex-shrink-0 overflow-hidden rounded-lg bg-surface sm:h-[72px] sm:w-[120px]">
+          {project.liveUrl ? (
+            <img
+              src={getThumbnailUrl(project.liveUrl)}
+              alt={project.name}
+              className="h-full w-full object-cover object-top"
+              loading="lazy"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-2xl text-text-muted">📦</div>
+          )}
         </div>
         <div className="flex-1">
           <h3 className="text-base font-semibold text-text-primary">{project.name}</h3>
