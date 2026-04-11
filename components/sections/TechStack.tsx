@@ -26,45 +26,35 @@ export function TechStack() {
         <SectionHeader title={tSection("title")} subtitle={tSection("subtitle")} centered />
       </div>
 
-      {/* Desktop: double marquee */}
-      <div className="hidden md:block">
-        {/* Row 1 — scrolls left */}
-        <MarqueeRow skills={topRow} direction="left" selected={selected} onSelect={handleClick} />
+      {/* Double marquee — all screens */}
+      <MarqueeRow skills={topRow} direction="left" selected={selected} onSelect={handleClick} />
+      <MarqueeRow skills={bottomRow} direction="right" selected={selected} onSelect={handleClick} />
 
-        {/* Row 2 — scrolls right */}
-        <MarqueeRow skills={bottomRow} direction="right" selected={selected} onSelect={handleClick} />
-
-        {/* Detail panel */}
-        <div className="px-6">
-          <AnimatePresence>
-            {selected && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                transition={{ duration: 0.3 }}
-                className="mx-auto mt-8 max-w-md rounded-card border border-card-border bg-card p-5 text-center"
-              >
-                <div className="flex items-center justify-center gap-3">
-                  <span className="text-2xl">{selected.icon}</span>
-                  <span className="text-lg font-bold" style={{ color: selected.color }}>{selected.name}</span>
-                  <span className="rounded-md bg-surface px-2 py-0.5 text-xs text-text-muted">{selected.yearsOfExperience} years</span>
-                </div>
-                <p className="mt-3 text-sm text-text-secondary">{t(selected.descriptionKey)}</p>
-                <div className="mt-3 flex flex-wrap justify-center gap-1.5">
-                  {selected.subSkills.map((sub) => (
-                    <span key={sub} className="rounded-md px-2 py-0.5 text-xs" style={{ backgroundColor: selected.color + "15", color: selected.color }}>{sub}</span>
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      </div>
-
-      {/* Mobile: grid fallback */}
-      <div className="md:hidden px-6">
-        <MobileSkillGrid />
+      {/* Detail panel */}
+      <div className="px-6">
+        <AnimatePresence>
+          {selected && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.3 }}
+              className="mx-auto mt-8 max-w-md rounded-card border border-card-border bg-card p-5 text-center"
+            >
+              <div className="flex items-center justify-center gap-3">
+                <span className="text-2xl">{selected.icon}</span>
+                <span className="text-lg font-bold" style={{ color: selected.color }}>{selected.name}</span>
+                <span className="rounded-md bg-surface px-2 py-0.5 text-xs text-text-muted">{selected.yearsOfExperience} years</span>
+              </div>
+              <p className="mt-3 text-sm text-text-secondary">{t(selected.descriptionKey)}</p>
+              <div className="mt-3 flex flex-wrap justify-center gap-1.5">
+                {selected.subSkills.map((sub) => (
+                  <span key={sub} className="rounded-md px-2 py-0.5 text-xs" style={{ backgroundColor: selected.color + "15", color: selected.color }}>{sub}</span>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
