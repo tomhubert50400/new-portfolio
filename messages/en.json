@@ -12,7 +12,13 @@
     "titleHighlight": "full-stack",
     "title2": "experiences.",
     "subtitle": "Fullstack developer with 6 years of experience building performant web applications with modern architectures.",
-    "viewProjects": "View Projects"
+    "viewProjects": "View Projects",
+    "terminal": {
+      "role": "Fullstack Developer",
+      "experience": "6 years",
+      "location": "Seoul",
+      "passion": "Building interactive UIs"
+    }
   },
   "about": {
     "title": "About Me",
