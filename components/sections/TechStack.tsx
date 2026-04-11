@@ -5,20 +5,124 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ScrollReveal";
-import { OrbitalSystem } from "@/components/ui/OrbitalSystem";
 import { skills } from "@/data/skills";
 import { Skill } from "@/lib/types";
 
+const topRow = skills.slice(0, 6);
+const bottomRow = skills.slice(6);
+
 export function TechStack() {
-  const t = useTranslations("techStack");
+  const t = useTranslations();
+  const tSection = useTranslations("techStack");
+  const [selected, setSelected] = useState<Skill | null>(null);
+
+  function handleClick(skill: Skill) {
+    setSelected(selected?.name === skill.name ? null : skill);
+  }
+
   return (
-    <section id="techStack" className="px-6 py-20">
-      <div className="mx-auto max-w-6xl">
-        <SectionHeader title={t("title")} subtitle={t("subtitle")} centered />
-        <ScrollReveal className="hidden md:block"><OrbitalSystem /></ScrollReveal>
-        <div className="md:hidden"><MobileSkillGrid /></div>
+    <section id="techStack" className="py-20 overflow-hidden">
+      <div className="px-6">
+        <SectionHeader title={tSection("title")} subtitle={tSection("subtitle")} centered />
+      </div>
+
+      {/* Desktop: double marquee */}
+      <div className="hidden md:block">
+        <ScrollReveal>
+          {/* Row 1 — scrolls left */}
+          <div className="relative mb-4">
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-bg to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-bg to-transparent" />
+
+            <div className="flex gap-4 hover:[animation-play-state:paused]" style={{ animation: "marquee-left 35s linear infinite", width: "max-content" }}>
+              {[...topRow, ...topRow].map((skill, i) => (
+                <SkillBadge
+                  key={`${skill.name}-${i}`}
+                  skill={skill}
+                  isSelected={selected?.name === skill.name}
+                  onClick={() => handleClick(skill)}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Row 2 — scrolls right */}
+          <div className="relative">
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-bg to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-bg to-transparent" />
+
+            <div className="flex gap-4 hover:[animation-play-state:paused]" style={{ animation: "marquee-right 40s linear infinite", width: "max-content" }}>
+              {[...bottomRow, ...bottomRow].map((skill, i) => (
+                <SkillBadge
+                  key={`${skill.name}-${i}`}
+                  skill={skill}
+                  isSelected={selected?.name === skill.name}
+                  onClick={() => handleClick(skill)}
+                />
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Detail panel */}
+        <div className="px-6">
+          <AnimatePresence>
+            {selected && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                transition={{ duration: 0.3 }}
+                className="mx-auto mt-8 max-w-md rounded-card border border-card-border bg-card p-5 text-center"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <span className="text-2xl">{selected.icon}</span>
+                  <span className="text-lg font-bold" style={{ color: selected.color }}>{selected.name}</span>
+                  <span className="rounded-md bg-surface px-2 py-0.5 text-xs text-text-muted">{selected.yearsOfExperience} years</span>
+                </div>
+                <p className="mt-3 text-sm text-text-secondary">{t(selected.descriptionKey)}</p>
+                <div className="mt-3 flex flex-wrap justify-center gap-1.5">
+                  {selected.subSkills.map((sub) => (
+                    <span key={sub} className="rounded-md px-2 py-0.5 text-xs" style={{ backgroundColor: selected.color + "15", color: selected.color }}>{sub}</span>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </div>
+
+      {/* Mobile: grid fallback */}
+      <div className="md:hidden px-6">
+        <MobileSkillGrid />
       </div>
     </section>
+  );
+}
+
+function SkillBadge({ skill, isSelected, onClick }: { skill: Skill; isSelected: boolean; onClick: () => void }) {
+  return (
+    <button
+      onClick={onClick}
+      className="flex flex-shrink-0 items-center gap-2.5 rounded-xl border px-5 py-3 transition-all duration-300 hover:scale-105"
+      style={{
+        backgroundColor: isSelected ? skill.color + "15" : skill.color + "08",
+        borderColor: isSelected ? skill.color + "50" : skill.color + "20",
+        boxShadow: isSelected ? `0 0 20px ${skill.color}25` : "none",
+      }}
+    >
+      <span className="text-lg leading-none">
+        {skill.icon.length <= 2 ? (
+          <span className="text-sm font-bold" style={{ color: skill.color }}>{skill.icon}</span>
+        ) : (
+          skill.icon
+        )}
+      </span>
+      <div className="text-left">
+        <div className="text-sm font-semibold" style={{ color: skill.color }}>{skill.name}</div>
+        <div className="text-[10px] text-text-muted">{skill.yearsOfExperience} years</div>
+      </div>
+    </button>
   );
 }
 
