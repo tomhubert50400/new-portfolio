@@ -172,12 +172,10 @@ export function ProjectCard({ project }: Props) {
 function ScreenshotImage({
   url,
   alt,
-  emoji,
   projectName,
 }: {
   url: string;
   alt: string;
-  emoji: string;
   projectName: string;
 }) {
   const [loaded, setLoaded] = useState(false);
