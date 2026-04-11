@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "experience": "Experience",
+    "techStack": "Tech Stack",
+    "letsTalk": "Let's Talk"
+  },
+  "hero": {
+    "badge": "Available for new opportunities",
+    "title1": "Building",
+    "titleHighlight": "full-stack",
+    "title2": "experiences.",
+    "subtitle": "Fullstack developer with 6 years of experience building performant web applications with modern architectures.",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "Fullstack developer based in Seoul with 6 years of experience. I build performant web apps with modern stacks — from design to deployment.",
+    "stats": {
+      "years": "Years exp.",
+      "projects": "Projects",
+      "languages": "Languages"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "freelance": {
+      "role": "Freelance Developer",
+      "description": "Full-stack web applications, SaaS platforms, and e-commerce solutions for diverse clients.",
+      "details": "Built end-to-end applications including Cafes in Seoul and Bouldrr. Handled everything from design to deployment using Next.js, Supabase, and Vercel."
+    },
+    "simform": {
+      "role": "Frontend Developer",
+      "description": "Enterprise dashboards and design systems for international clients.",
+      "details": "Developed complex React applications with TypeScript, implementing responsive design systems and data-heavy dashboards."
+    },
+    "gifi": {
+      "role": "Web Developer",
+      "description": "E-commerce platform and internal tools for France's leading DIY retailer.",
+      "details": "Worked on the e-commerce frontend and inventory management tools, improving user experience and page performance."
+    },
+    "mobsuccess": {
+      "role": "Web Developer",
+      "description": "Mobile marketing analytics platform with real-time data visualization.",
+      "details": "Built analytics dashboards and reporting tools for mobile marketing campaigns, working with real-time data streams."
+    }
+  },
+  "projects": {
+    "title": "Selected Work",
+    "subtitle": "Personal projects & experiments",
+    "cafesInSeoul": {
+      "description": "Full-stack cafe discovery app for Seoul with maps, reviews, ratings, and mobile support."
+    },
+    "bouldrr": {
+      "description": "Boulder climbing tracker with session stats, progression charts, videos, and social features."
+    },
+    "draftPredictions": {
+      "description": "Sports draft prediction platform with live data feeds and interactive visualizations."
+    },
+    "woeve": {
+      "description": "Product design agency website with bilingual support and interactive navigation."
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "Click a skill to explore"
+  },
+  "skills": {
+    "react": { "description": "Component architecture, hooks, context, state management. Built complex UIs with real-time updates and data visualizations." },
+    "nextjs": { "description": "App Router, SSR, SSG, API routes. Full-stack applications with optimized performance and SEO." },
+    "typescript": { "description": "Strong typing, generics, utility types. Type-safe applications with better DX and fewer runtime errors." },
+    "supabase": { "description": "Auth, real-time subscriptions, storage, edge functions. Complete backend-as-a-service for rapid development." },
+    "tailwind": { "description": "Utility-first CSS, responsive design, custom configurations. Rapid UI development with consistent design systems." },
+    "javascript": { "description": "ES6+, async patterns, DOM manipulation, Node.js. 6 years of experience across frontend and backend." },
+    "postgresql": { "description": "Complex queries, migrations, row-level security, stored functions. Relational data modeling for production apps." },
+    "vercel": { "description": "Deployments, edge functions, analytics. Seamless CI/CD with preview deployments and production hosting." },
+    "git": { "description": "Branching strategies, CI/CD pipelines, code review workflows. Clean commit history and collaborative development." },
+    "docker": { "description": "Containerized development environments, compose configurations, production images." },
+    "restapi": { "description": "API design, authentication, rate limiting, documentation. RESTful services for web and mobile clients." },
+    "auth": { "description": "JWT, OAuth, session management, role-based access control. Secure authentication flows for production apps." }
+  },
+  "contact": {
+    "title": "Have an idea?",
+    "titleHighlight": "Let's build it together.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Tom Hubert. All rights reserved."
+  }
+}

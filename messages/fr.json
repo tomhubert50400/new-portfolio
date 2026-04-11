@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "work": "Projets",
+    "about": "À propos",
+    "experience": "Expérience",
+    "techStack": "Compétences",
+    "letsTalk": "Contact"
+  },
+  "hero": {
+    "badge": "Disponible pour de nouvelles opportunités",
+    "title1": "Créer des",
+    "titleHighlight": "expériences",
+    "title2": "full-stack.",
+    "subtitle": "Développeur fullstack avec 6 ans d'expérience dans la création d'applications web performantes avec des architectures modernes.",
+    "viewProjects": "Voir les projets"
+  },
+  "about": {
+    "title": "À propos",
+    "bio": "Développeur fullstack basé à Séoul avec 6 ans d'expérience. Je construis des applications web performantes avec des stacks modernes — du design au déploiement.",
+    "stats": {
+      "years": "Ans d'exp.",
+      "projects": "Projets",
+      "languages": "Langues"
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "freelance": {
+      "role": "Développeur Freelance",
+      "description": "Applications web full-stack, plateformes SaaS et solutions e-commerce pour des clients variés.",
+      "details": "Création d'applications complètes incluant Cafes in Seoul et Bouldrr. Gestion de A à Z avec Next.js, Supabase et Vercel."
+    },
+    "simform": {
+      "role": "Développeur Frontend",
+      "description": "Dashboards entreprise et design systems pour des clients internationaux.",
+      "details": "Développement d'applications React complexes avec TypeScript, design systems responsifs et dashboards data-heavy."
+    },
+    "gifi": {
+      "role": "Développeur Web",
+      "description": "Plateforme e-commerce et outils internes pour le leader français du bricolage.",
+      "details": "Travail sur le frontend e-commerce et les outils de gestion d'inventaire, amélioration de l'UX et des performances."
+    },
+    "mobsuccess": {
+      "role": "Développeur Web",
+      "description": "Plateforme d'analytics marketing mobile avec visualisation de données en temps réel.",
+      "details": "Création de dashboards analytics et outils de reporting pour les campagnes marketing mobile."
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Projets personnels et expérimentations",
+    "cafesInSeoul": { "description": "Application full-stack de découverte de cafés à Séoul avec cartes, avis, notes et support mobile." },
+    "bouldrr": { "description": "Tracker d'escalade avec stats de session, graphiques de progression, vidéos et fonctionnalités sociales." },
+    "draftPredictions": { "description": "Plateforme de prédiction de drafts sportifs avec données en temps réel et visualisations interactives." },
+    "woeve": { "description": "Site web d'agence de design produit avec support bilingue et navigation interactive." }
+  },
+  "techStack": { "title": "Compétences", "subtitle": "Cliquez sur une compétence pour explorer" },
+  "skills": {
+    "react": { "description": "Architecture composants, hooks, context, gestion d'état. UIs complexes avec mises à jour en temps réel." },
+    "nextjs": { "description": "App Router, SSR, SSG, routes API. Applications full-stack optimisées en performance et SEO." },
+    "typescript": { "description": "Typage fort, génériques, utility types. Applications type-safe avec meilleure DX." },
+    "supabase": { "description": "Auth, temps réel, stockage, edge functions. Backend complet pour un développement rapide." },
+    "tailwind": { "description": "CSS utility-first, responsive design, configurations custom. Développement UI rapide et cohérent." },
+    "javascript": { "description": "ES6+, patterns async, manipulation DOM, Node.js. 6 ans d'expérience frontend et backend." },
+    "postgresql": { "description": "Requêtes complexes, migrations, RLS, fonctions stockées. Modélisation de données relationnelles." },
+    "vercel": { "description": "Déploiements, edge functions, analytics. CI/CD avec preview deployments et hosting production." },
+    "git": { "description": "Stratégies de branching, pipelines CI/CD, workflows de code review." },
+    "docker": { "description": "Environnements de développement containerisés, configurations compose, images de production." },
+    "restapi": { "description": "Design d'API, authentification, rate limiting, documentation. Services RESTful web et mobile." },
+    "auth": { "description": "JWT, OAuth, gestion de sessions, contrôle d'accès par rôle. Flux d'authentification sécurisés." }
+  },
+  "contact": { "title": "Une idée ?", "titleHighlight": "Construisons-la ensemble.", "form": { "name": "Nom", "email": "Email", "message": "Message", "send": "Envoyer" } },
+  "footer": { "copyright": "© 2026 Tom Hubert. Tous droits réservés." }
+}
