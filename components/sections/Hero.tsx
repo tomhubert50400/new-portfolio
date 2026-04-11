@@ -15,6 +15,7 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden px-6 py-20 md:py-32">
+      <ParticleField />
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:gap-16">
         <div className="flex-1">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
