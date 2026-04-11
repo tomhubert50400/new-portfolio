@@ -10,7 +10,7 @@ export function Experience() {
   const t = useTranslations("experience");
 
   return (
-    <section id="experience" className="px-6 py-20">
+    <section id="experience" className="px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <SectionHeader title={t("title")} />
         <StaggerContainer className="grid gap-4 sm:grid-cols-2">
