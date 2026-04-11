@@ -7,8 +7,8 @@ export const projects: Project[] = [
     descriptionKey: "projects.cafesInSeoul.description",
     tags: ["Next.js", "Supabase", "Kakao Maps", "Capacitor"],
     image: "/images/projects/cafes-seoul.png",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://cafesinseoul.com/",
+    githubUrl: "https://github.com/tomhubert50400",
   },
   {
     slug: "bouldrr",
