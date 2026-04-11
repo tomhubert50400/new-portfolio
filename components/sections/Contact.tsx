@@ -7,7 +7,7 @@ import { ContactForm } from "@/components/ui/ContactForm";
 export function Contact() {
   const t = useTranslations("contact");
   return (
-    <section id="contact" className="relative px-6 py-20" style={{ background: "linear-gradient(180deg, transparent 0%, rgba(6,182,212,0.03) 100%)" }}>
+    <section id="contact" className="relative px-6 py-10" style={{ background: "linear-gradient(180deg, transparent 0%, rgba(6,182,212,0.03) 100%)" }}>
       <div className="mx-auto max-w-6xl text-center">
         <ScrollReveal>
           <h2 className="text-3xl font-bold text-text-primary md:text-5xl">
