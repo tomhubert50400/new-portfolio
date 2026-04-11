@@ -200,8 +200,7 @@ function ScreenshotImage({
       {error && (
         <div className="flex h-[300px] items-center justify-center bg-surface">
           <div className="flex flex-col items-center gap-2 text-text-muted">
-            <span className="text-3xl">{emoji}</span>
-            <span className="text-sm">Click to visit {projectName}</span>
+            <span className="text-sm">Click to visit {projectName} ↗</span>
           </div>
         </div>
       )}
