@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useTypingEffect } from "@/hooks/useTypingEffect";
 
 const command = "cat profile.json";
