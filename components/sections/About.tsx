@@ -14,7 +14,7 @@ export function About() {
   const t = useTranslations("about");
 
   return (
-    <section id="about" className="px-6 py-20">
+    <section id="about" className="px-6 py-10">
       <div className="mx-auto max-w-6xl">
         <SectionHeader title={t("title")} />
         <div className="flex flex-col items-center gap-10 md:flex-row">
