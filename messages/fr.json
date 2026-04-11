@@ -12,7 +12,13 @@
     "titleHighlight": "expériences",
     "title2": "full-stack.",
     "subtitle": "Développeur fullstack avec 6 ans d'expérience dans la création d'applications web performantes avec des architectures modernes.",
-    "viewProjects": "Voir les projets"
+    "viewProjects": "Voir les projets",
+    "terminal": {
+      "role": "Développeur Fullstack",
+      "experience": "6 ans",
+      "location": "Séoul",
+      "passion": "Créer des interfaces interactives"
+    }
   },
   "about": {
     "title": "À propos",
