@@ -28,41 +28,11 @@ export function TechStack() {
 
       {/* Desktop: double marquee */}
       <div className="hidden md:block">
-        <ScrollReveal>
-          {/* Row 1 — scrolls left */}
-          <div className="relative mb-4">
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-bg to-transparent" />
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-bg to-transparent" />
+        {/* Row 1 — scrolls left */}
+        <MarqueeRow skills={topRow} direction="left" speed={30} selected={selected} onSelect={handleClick} />
 
-            <div className="flex gap-4 hover:[animation-play-state:paused]" style={{ animation: "marquee-left 35s linear infinite", width: "max-content" }}>
-              {[...topRow, ...topRow].map((skill, i) => (
-                <SkillBadge
-                  key={`${skill.name}-${i}`}
-                  skill={skill}
-                  isSelected={selected?.name === skill.name}
-                  onClick={() => handleClick(skill)}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Row 2 — scrolls right */}
-          <div className="relative">
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-bg to-transparent" />
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-bg to-transparent" />
-
-            <div className="flex gap-4 hover:[animation-play-state:paused]" style={{ animation: "marquee-right 40s linear infinite", width: "max-content" }}>
-              {[...bottomRow, ...bottomRow].map((skill, i) => (
-                <SkillBadge
-                  key={`${skill.name}-${i}`}
-                  skill={skill}
-                  isSelected={selected?.name === skill.name}
-                  onClick={() => handleClick(skill)}
-                />
-              ))}
-            </div>
-          </div>
-        </ScrollReveal>
+        {/* Row 2 — scrolls right */}
+        <MarqueeRow skills={bottomRow} direction="right" speed={35} selected={selected} onSelect={handleClick} />
 
         {/* Detail panel */}
         <div className="px-6">
