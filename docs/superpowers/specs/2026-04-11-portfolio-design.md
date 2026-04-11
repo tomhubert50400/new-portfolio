@@ -40,7 +40,7 @@ Personal portfolio for Tom Hubert, fullstack developer based in Seoul with 6 yea
     {
       "name": "Tom Hubert",
       "role": "Fullstack Developer",
-      "experience": 6,
+      "experience": "6 years",
       "location": "Seoul",
       "skills": ["React", "Next.js", "Supabase", "TypeScript", "Tailwind"],
       "passion": "Building interactive UIs"
@@ -136,12 +136,13 @@ Personal portfolio for Tom Hubert, fullstack developer based in Seoul with 6 yea
 
 ## Global Design Tokens
 
-- **Background:** #0a0a0a (near black)
-- **Card background:** #111111
-- **Card border:** #1a1a1a
-- **Text primary:** #ffffff
-- **Text secondary:** #888888
-- **Text muted:** #666666
+- **Background:** #141418 (dark but not black, slight blue undertone)
+- **Surface:** #1c1c22 (elevated surfaces, navbar)
+- **Card background:** #22222a (cards, panels)
+- **Card border:** #2e2e38 (visible but subtle)
+- **Text primary:** #e8e8ed (off-white, easier on the eyes)
+- **Text secondary:** #9d9dab (readable secondary)
+- **Text muted:** #6b6b7b (labels, hints)
 - **Accent cyan:** #06b6d4
 - **Accent violet:** #8b5cf6
 - **Accent pink:** #ec4899
@@ -238,6 +239,7 @@ new-portfolio/
 ## Data Models
 
 ### Project
+
 ```ts
 interface Project {
   slug: string;
@@ -252,6 +254,7 @@ interface Project {
 ```
 
 ### Experience
+
 ```ts
 interface Experience {
   company: string;
@@ -264,12 +267,13 @@ interface Experience {
 ```
 
 ### Skill
+
 ```ts
 interface Skill {
   name: string;
   icon: string;
   color: string;
-  size: 'sm' | 'md' | 'lg';
+  size: "sm" | "md" | "lg";
   yearsOfExperience: number;
   description: string; // i18n key
   subSkills: string[];
