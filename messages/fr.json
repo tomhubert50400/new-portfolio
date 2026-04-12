@@ -1,80 +1,103 @@
 {
   "nav": {
     "work": "Projets",
-    "about": "À propos",
-    "experience": "Expérience",
-    "techStack": "Compétences",
+    "about": "A propos",
+    "experience": "Experience",
+    "techStack": "Competences",
     "letsTalk": "Contact"
   },
   "hero": {
-    "badge": "Disponible pour de nouvelles opportunités",
-    "title1": "Créer des",
-    "titleHighlight": "expériences",
+    "badge": "Disponible pour de nouvelles opportunites",
+    "title1": "Creer des",
+    "titleHighlight": "experiences",
     "title2": "full-stack.",
-    "subtitle": "Développeur fullstack avec 6 ans d'expérience dans la création d'applications web performantes avec des architectures modernes.",
+    "subtitle": "Developpeur fullstack avec 6 ans d'experience dans la creation d'applications web performantes avec des architectures modernes.",
     "viewProjects": "Voir les projets",
     "terminal": {
-      "role": "Développeur Fullstack",
-      "experience": "6 ans",
-      "location": "Séoul",
-      "passion": "Créer des interfaces interactives"
+      "role": "Developpeur Fullstack",
+      "experience": "6+ ans",
+      "location": "Seoul",
+      "passion": "Transformer les idees en produits"
     }
   },
   "about": {
-    "title": "À propos",
-    "bio": "Développeur fullstack basé à Séoul avec 6 ans d'expérience. Je construis des applications web performantes avec des stacks modernes — du design au déploiement.",
+    "title": "A propos",
+    "bio": "J'ai quitte la France pour Seoul afin de developper des logiciels pour un public mondial. En 6 ans, j'ai livre des plateformes SaaS, des boutiques e-commerce et des dashboards data, en gerant tout du schema de base de donnees aux interfaces pixel-perfect.",
     "stats": {
       "years": "Ans d'exp.",
       "projects": "Projets",
-      "languages": "Langages"
+      "languages": "Langues"
     }
   },
   "experience": {
-    "title": "Expérience",
+    "title": "Experience",
     "freelance": {
-      "role": "Développeur Freelance",
-      "description": "Applications web full-stack, plateformes SaaS et solutions e-commerce pour des clients variés.",
-      "details": "Création d'applications complètes incluant Cafes in Seoul et Bouldrr. Gestion de A à Z avec Next.js, Supabase et Vercel."
+      "role": "Developpeur Fullstack Freelance",
+      "description": "Livraison de produits SaaS et d'applications grand public de bout en bout, du schema de base de donnees aux interfaces responsives.",
+      "details": "Creation de Cafes in Seoul (decouverte de cafes avec Kakao Maps + app mobile via Capacitor) et Bouldrr (tracker d'escalade avec analytics de session). Seul developpeur sur chaque projet : design, frontend, backend, deploiement."
     },
     "simform": {
-      "role": "Développeur Frontend",
-      "description": "Dashboards entreprise et design systems pour des clients internationaux.",
-      "details": "Développement d'applications React complexes avec TypeScript, design systems responsifs et dashboards data-heavy."
+      "role": "Developpeur Frontend",
+      "description": "Creation de dashboards entreprise et de bibliotheques de composants reutilisables pour des clients B2B internationaux.",
+      "details": "Developpement de dashboards React data-heavy avec TypeScript. Creation d'un design system partage utilise sur 3 projets clients, reduisant significativement le temps de dev UI."
     },
     "gifi": {
-      "role": "Développeur Web",
-      "description": "Plateforme e-commerce et outils internes pour le leader français du bricolage.",
-      "details": "Travail sur le frontend e-commerce et les outils de gestion d'inventaire, amélioration de l'UX et des performances."
+      "role": "Developpeur Web",
+      "description": "Travail sur la plateforme e-commerce du plus grand distributeur bricolage et maison de France (900+ magasins).",
+      "details": "Amelioration des performances de listing produit et creation d'outils internes de gestion d'inventaire. Focus sur la vitesse de page et l'UX orientee conversion."
     },
     "mobsuccess": {
-      "role": "Développeur Web",
-      "description": "Plateforme d'analytics marketing mobile avec visualisation de données en temps réel.",
-      "details": "Création de dashboards analytics et outils de reporting pour les campagnes marketing mobile."
+      "role": "Developpeur Web",
+      "description": "Developpement de dashboards analytics temps reel pour une plateforme de marketing mobile.",
+      "details": "Creation d'interfaces de reporting de campagnes avec des flux de donnees en direct. Premier poste professionnel, apprentissage du travail avec de gros volumes de donnees et des cycles de sprint serres."
     }
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Projets personnels et expérimentations",
-    "cafesInSeoul": { "description": "Application full-stack de découverte de cafés à Séoul avec cartes, avis, notes et support mobile." },
-    "bouldrr": { "description": "Tracker d'escalade avec stats de session, graphiques de progression, vidéos et fonctionnalités sociales." },
-    "draftPredictions": { "description": "Plateforme de prédiction de drafts sportifs avec données en temps réel et visualisations interactives." },
-    "woeve": { "description": "Site web d'agence de design produit avec support bilingue et navigation interactive." }
+    "subtitle": "Projets personnels et experimentations",
+    "cafesInSeoul": {
+      "description": "Decouvrez les meilleurs cafes de Seoul. Recherchez par quartier, lisez les avis et consultez les notes. Construit avec Next.js, Supabase et Kakao Maps."
+    },
+    "bouldrr": {
+      "description": "Suivez vos sessions de bloc, visualisez votre progression et partagez vos videos avec la communaute d'escalade."
+    },
+    "draftPredictions": {
+      "description": "Predisez les picks de draft de Karmine Corp pendant les matchs de League of Legends LEC."
+    },
+    "woeve": {
+      "description": "Site vitrine pour un studio de design produit. Bilingue FR/EN, animations au scroll."
+    }
   },
-  "techStack": { "title": "Compétences", "subtitle": "Cliquez sur une compétence pour explorer" },
+  "techStack": {
+    "title": "Competences",
+    "subtitle": "Cliquez sur une competence pour explorer"
+  },
   "skills": {
-    "react": { "description": "Architecture composants, hooks, context, gestion d'état. UIs complexes avec mises à jour en temps réel." },
-    "nextjs": { "description": "App Router, SSR, SSG, routes API. Applications full-stack optimisées en performance et SEO." },
-    "typescript": { "description": "Typage fort, génériques, utility types. Applications type-safe avec meilleure DX." },
-    "supabase": { "description": "Auth, temps réel, stockage, edge functions. Backend complet pour un développement rapide." },
-    "tailwind": { "description": "CSS utility-first, responsive design, configurations custom. Développement UI rapide et cohérent." },
-    "javascript": { "description": "ES6+, patterns async, manipulation DOM, Node.js. 6 ans d'expérience frontend et backend." },
-    "postgresql": { "description": "Requêtes complexes, migrations, RLS, fonctions stockées. Modélisation de données relationnelles." },
-    "vercel": { "description": "Déploiements, edge functions, analytics. CI/CD avec preview deployments et hosting production." },
-    "git": { "description": "Stratégies de branching, pipelines CI/CD, workflows de code review." },
-    "docker": { "description": "Environnements de développement containerisés, configurations compose, images de production." },
-    "restapi": { "description": "Design d'API, authentification, rate limiting, documentation. Services RESTful web et mobile." },
-    "auth": { "description": "JWT, OAuth, gestion de sessions, contrôle d'accès par rôle. Flux d'authentification sécurisés." }
+    "react": { "description": "Ma librairie UI principale. Dashboards complexes, flux temps reel et cartes interactives avec hooks, context et patterns d'etat custom." },
+    "nextjs": { "description": "Framework de reference pour chaque projet. App Router, server components, routes API, ISR. Utilise sur Cafes in Seoul, Bouldrr et ce portfolio." },
+    "typescript": { "description": "Tout en TS. Generics, unions discriminees, mode strict. Attrape les bugs avant qu'ils arrivent en production." },
+    "supabase": { "description": "Auth, Postgres, subscriptions temps reel, stockage, edge functions. Mon backend par defaut pour livrer rapidement." },
+    "tailwind": { "description": "CSS utility-first pour prototypage rapide et production. Design tokens custom, layouts responsifs, themes sombres." },
+    "javascript": { "description": "6+ ans en frontend et backend. ES6+, patterns async, Node.js, APIs navigateur." },
+    "postgresql": { "description": "Requetes complexes, migrations, row-level security, fonctions stockees. Des schemas qui scalent." },
+    "vercel": { "description": "CI/CD fluide, preview deployments, edge functions. Deployer et oublier." },
+    "git": { "description": "Feature branches, rebasing, historique de commits propre. Chaque projet, chaque jour." },
+    "docker": { "description": "Environnements de dev, stacks compose, services self-hosted. Je gere ma propre infra a la maison." },
+    "restapi": { "description": "Conception, creation et documentation d'APIs. Middleware d'auth, rate limiting, versioning." },
+    "auth": { "description": "JWT, OAuth, tokens de session, acces par role. Flux d'authentification livres pour plusieurs apps en production." }
   },
-  "contact": { "title": "Une idée ?", "titleHighlight": "Construisons-la ensemble.", "form": { "name": "Nom *", "company": "Société", "email": "Email *", "message": "Message *", "send": "Envoyer" } },
-  "footer": { "copyright": "Tous droits réservés." }
+  "contact": {
+    "title": "Un projet en tete ?",
+    "titleHighlight": "Donnons-lui vie.",
+    "form": {
+      "name": "Nom *",
+      "company": "Societe",
+      "email": "Email *",
+      "message": "Message *",
+      "send": "Envoyer"
+    }
+  },
+  "footer": {
+    "copyright": "Tous droits reserves."
+  }
 }
