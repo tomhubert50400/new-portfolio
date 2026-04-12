@@ -15,14 +15,14 @@
     "viewProjects": "View Projects",
     "terminal": {
       "role": "Fullstack Developer",
-      "experience": "6 years",
+      "experience": "6+ years",
       "location": "Seoul",
-      "passion": "Building interactive UIs"
+      "passion": "Turning ideas into products"
     }
   },
   "about": {
     "title": "About Me",
-    "bio": "Fullstack developer based in Seoul with 6 years of experience. I build performant web apps with modern stacks — from design to deployment.",
+    "bio": "I moved from France to Seoul to build software for a global audience. Over 6 years I've shipped SaaS platforms, e-commerce stores, and data-driven dashboards, handling everything from database design to pixel-perfect UIs.",
     "stats": {
       "years": "Years exp.",
       "projects": "Projects",
@@ -32,40 +32,40 @@
   "experience": {
     "title": "Experience",
     "freelance": {
-      "role": "Freelance Developer",
-      "description": "Full-stack web applications, SaaS platforms, and e-commerce solutions for diverse clients.",
-      "details": "Built end-to-end applications including Cafes in Seoul and Bouldrr. Handled everything from design to deployment using Next.js, Supabase, and Vercel."
+      "role": "Freelance Fullstack Developer",
+      "description": "Shipped SaaS products and consumer apps end-to-end, from database schemas to responsive UIs.",
+      "details": "Built Cafes in Seoul (cafe discovery with Kakao Maps + mobile app via Capacitor) and Bouldrr (climbing tracker with session analytics). Solo dev on each project: design, frontend, backend, deployment."
     },
     "simform": {
       "role": "Frontend Developer",
-      "description": "Enterprise dashboards and design systems for international clients.",
-      "details": "Developed complex React applications with TypeScript, implementing responsive design systems and data-heavy dashboards."
+      "description": "Built enterprise dashboards and reusable component libraries for international B2B clients.",
+      "details": "Developed data-heavy React dashboards with TypeScript. Created a shared design system used across 3 client projects, cutting UI dev time significantly."
     },
     "gifi": {
       "role": "Web Developer",
-      "description": "E-commerce platform and internal tools for France's leading DIY retailer.",
-      "details": "Worked on the e-commerce frontend and inventory management tools, improving user experience and page performance."
+      "description": "Worked on the e-commerce platform of France's largest home & DIY retailer (900+ stores).",
+      "details": "Improved product listing performance and built internal inventory management tools. Focused on page speed and conversion-friendly UX."
     },
     "mobsuccess": {
       "role": "Web Developer",
-      "description": "Mobile marketing analytics platform with real-time data visualization.",
-      "details": "Built analytics dashboards and reporting tools for mobile marketing campaigns, working with real-time data streams."
+      "description": "Developed real-time analytics dashboards for a mobile marketing platform.",
+      "details": "Built campaign reporting interfaces with live data feeds. First professional role, learned to work with large datasets and tight sprint cycles."
     }
   },
   "projects": {
     "title": "Selected Work",
     "subtitle": "Personal projects & experiments",
     "cafesInSeoul": {
-      "description": "Full-stack cafe discovery app for Seoul with maps, reviews, ratings, and mobile support."
+      "description": "Discover the best cafes in Seoul. Search by neighborhood, read reviews, and browse ratings. Built with Next.js, Supabase, and Kakao Maps."
     },
     "bouldrr": {
-      "description": "Boulder climbing tracker with session stats, progression charts, videos, and social features."
+      "description": "Track your bouldering sessions, visualize progression, and share videos with the climbing community."
     },
     "draftPredictions": {
-      "description": "Sports draft prediction platform with live data feeds and interactive visualizations."
+      "description": "Predict Karmine Corp draft picks during League of Legends LEC matches."
     },
     "woeve": {
-      "description": "Product design agency website with bilingual support and interactive navigation."
+      "description": "Agency site for a product design studio. Bilingual FR/EN, scroll-driven animations."
     }
   },
   "techStack": {
@@ -73,22 +73,22 @@
     "subtitle": "Click a skill to explore"
   },
   "skills": {
-    "react": { "description": "Component architecture, hooks, context, state management. Built complex UIs with real-time updates and data visualizations." },
-    "nextjs": { "description": "App Router, SSR, SSG, API routes. Full-stack applications with optimized performance and SEO." },
-    "typescript": { "description": "Strong typing, generics, utility types. Type-safe applications with better DX and fewer runtime errors." },
-    "supabase": { "description": "Auth, real-time subscriptions, storage, edge functions. Complete backend-as-a-service for rapid development." },
-    "tailwind": { "description": "Utility-first CSS, responsive design, custom configurations. Rapid UI development with consistent design systems." },
-    "javascript": { "description": "ES6+, async patterns, DOM manipulation, Node.js. 6 years of experience across frontend and backend." },
-    "postgresql": { "description": "Complex queries, migrations, row-level security, stored functions. Relational data modeling for production apps." },
-    "vercel": { "description": "Deployments, edge functions, analytics. Seamless CI/CD with preview deployments and production hosting." },
-    "git": { "description": "Branching strategies, CI/CD pipelines, code review workflows. Clean commit history and collaborative development." },
-    "docker": { "description": "Containerized development environments, compose configurations, production images." },
-    "restapi": { "description": "API design, authentication, rate limiting, documentation. RESTful services for web and mobile clients." },
-    "auth": { "description": "JWT, OAuth, session management, role-based access control. Secure authentication flows for production apps." }
+    "react": { "description": "My primary UI library. Built complex dashboards, real-time feeds, and interactive maps with hooks, context, and custom state patterns." },
+    "nextjs": { "description": "Go-to framework for every project. App Router, server components, API routes, ISR. Used on Cafes in Seoul, Bouldrr, and this portfolio." },
+    "typescript": { "description": "Write everything in TS. Generics, discriminated unions, strict mode. Catches bugs before they hit production." },
+    "supabase": { "description": "Auth, Postgres, real-time subscriptions, storage, edge functions. My default backend for shipping fast." },
+    "tailwind": { "description": "Utility-first CSS for rapid prototyping and production. Custom design tokens, responsive layouts, dark themes." },
+    "javascript": { "description": "6+ years across frontend and backend. ES6+, async patterns, Node.js, browser APIs." },
+    "postgresql": { "description": "Complex queries, migrations, row-level security, stored functions. Design schemas that scale." },
+    "vercel": { "description": "Seamless CI/CD, preview deployments, edge functions. Deploy and forget." },
+    "git": { "description": "Feature branches, rebasing, clean commit history. Every project, every day." },
+    "docker": { "description": "Dev environments, compose stacks, self-hosted services. Run my own infra at home." },
+    "restapi": { "description": "Design, build, and document APIs. Auth middleware, rate limiting, versioning." },
+    "auth": { "description": "JWT, OAuth, session tokens, role-based access. Shipped auth flows for multiple production apps." }
   },
   "contact": {
-    "title": "Have an idea?",
-    "titleHighlight": "Let's build it together.",
+    "title": "Got a project in mind?",
+    "titleHighlight": "Let's make it happen.",
     "form": {
       "name": "Name *",
       "company": "Company",
