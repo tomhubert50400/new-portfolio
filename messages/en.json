@@ -47,9 +47,9 @@
       "details": "Improved product listing performance and built internal inventory management tools. Focused on page speed and conversion-friendly UX."
     },
     "mobsuccess": {
-      "role": "Web Developer",
-      "description": "Developed real-time analytics dashboards for a mobile marketing platform.",
-      "details": "Built campaign reporting interfaces with live data feeds. First professional role, learned to work with large datasets and tight sprint cycles."
+      "role": "Frontend Developer",
+      "description": "Built the Gifi marketplace frontend as a React developer within a mobile marketing agency.",
+      "details": "Developed the e-commerce marketplace interface for Gifi using React. First professional role, learned to ship production code in a fast-paced agency environment."
     }
   },
   "projects": {
