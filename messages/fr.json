@@ -47,9 +47,9 @@
       "details": "Amelioration des performances de listing produit et creation d'outils internes de gestion d'inventaire. Focus sur la vitesse de page et l'UX orientee conversion."
     },
     "mobsuccess": {
-      "role": "Developpeur Web",
-      "description": "Developpement de dashboards analytics temps reel pour une plateforme de marketing mobile.",
-      "details": "Creation d'interfaces de reporting de campagnes avec des flux de donnees en direct. Premier poste professionnel, apprentissage du travail avec de gros volumes de donnees et des cycles de sprint serres."
+      "role": "Developpeur Frontend",
+      "description": "Developpement du frontend de la marketplace Gifi en tant que developpeur React au sein d'une agence de marketing mobile.",
+      "details": "Developpement de l'interface e-commerce de la marketplace Gifi en React. Premier poste professionnel, apprentissage de la livraison de code en production dans un environnement agence."
     }
   },
   "projects": {
