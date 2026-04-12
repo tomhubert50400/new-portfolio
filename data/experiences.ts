@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
     duration: "1 year",
     years: "2018 — 2019",
     descriptionKey: "experience.mobsuccess.description",
-    tags: ["JavaScript", "React"],
+    tags: ["React", "JavaScript"],
     expandedDetailsKey: "experience.mobsuccess.details",
     color: "#fbbf24",
   },
