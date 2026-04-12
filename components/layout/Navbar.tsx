@@ -12,10 +12,14 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   function scrollTo(id: string) {
-    setMobileOpen(false);
-    setTimeout(() => {
+    if (mobileOpen) {
+      setMobileOpen(false);
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    } else {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    }, 300);
+    }
   }
 
   return (
