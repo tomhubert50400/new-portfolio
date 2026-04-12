@@ -7,7 +7,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 const stats = [
   { value: "6", labelKey: "stats.years", color: "text-accent-cyan" },
   { value: "10+", labelKey: "stats.projects", color: "text-accent-violet" },
-  { value: "3", labelKey: "stats.languages", color: "text-accent-pink" },
+  { value: "12+", labelKey: "stats.technologies", color: "text-accent-pink" },
 ];
 
 export function About() {
