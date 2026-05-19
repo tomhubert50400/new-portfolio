@@ -55,6 +55,9 @@
   "projects": {
     "title": "프로젝트",
     "subtitle": "개인 프로젝트 및 실험",
+    "kusodu": {
+      "description": "\uad11\uace0 \uc5c6\ub294 iPhone/iPad Sudoku \uc571\uc73c\ub85c, Swift\ub85c \uac1c\ubc1c\ud558\uace0 App Store\uc5d0 \ucd9c\uc2dc\ud588\uc2b5\ub2c8\ub2e4. \uba54\ubaa8, \uc624\ub958 \ucd94\uc801, \ud1b5\uacc4, \uc810\uc9c4\uc801 \ud78c\ud2b8\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4."
+    },
     "cafesInSeoul": {
       "description": "서울 최고의 카페를 발견하세요. 동네별 검색, 리뷰 읽기, 평점 확인. Next.js, Supabase, 카카오맵으로 구축."
     },

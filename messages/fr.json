@@ -55,6 +55,9 @@
   "projects": {
     "title": "Projets",
     "subtitle": "Projets personnels et experimentations",
+    "kusodu": {
+      "description": "Application Sudoku sans publicite pour iPhone et iPad, developpee en Swift et publiee sur l'App Store. Notes, suivi des erreurs, statistiques et indices progressifs."
+    },
     "cafesInSeoul": {
       "description": "Decouvrez les meilleurs cafes de Seoul. Recherchez par quartier, lisez les avis et consultez les notes. Construit avec Next.js, Supabase et Kakao Maps."
     },

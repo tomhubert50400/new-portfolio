@@ -2,6 +2,18 @@ import { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    slug: "kusodu",
+    name: "Kusodu",
+    descriptionKey: "projects.kusodu.description",
+    tags: ["Swift", "iOS", "Game Logic", "App Store"],
+    image: "/images/projects/kusodu.png",
+    thumbnailImage: "/images/projects/kusodu-logo.webp",
+    liveUrl: "https://apps.apple.com/us/app/kusodu-adfree-premium-sudoku/id6768517977",
+    pages: [
+      { label: "App Store", path: "/" },
+    ],
+  },
+  {
     slug: "cafes-in-seoul",
     name: "Cafes in Seoul",
     descriptionKey: "projects.cafesInSeoul.description",
