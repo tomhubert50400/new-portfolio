@@ -1,24 +1,15 @@
-"use client";
-
-import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion";
 import { Experience } from "@/lib/types";
 
 type Props = { experience: Experience };
 
 export function ExperienceCard({ experience }: Props) {
   const t = useTranslations();
-  const [expanded, setExpanded] = useState(false);
 
   return (
-    <motion.div
-      layout
-      onClick={() => setExpanded(!expanded)}
-      className="flex h-full cursor-pointer flex-col rounded-card border border-card-border bg-card p-5 transition-colors hover:border-opacity-60"
-      style={{ borderColor: expanded ? experience.color + "40" : undefined }}
-      whileHover={{ scale: 1.02 }}
-      transition={{ type: "spring", stiffness: 300, damping: 25 }}
+    <div
+      className="flex h-full flex-col rounded-card border border-card-border bg-card p-5 transition-colors"
+      style={{ borderColor: experience.expandedDetailsKey ? experience.color + "40" : undefined }}
     >
       <div className="flex items-start justify-between">
         <div>
@@ -33,14 +24,12 @@ export function ExperienceCard({ experience }: Props) {
           <span key={tag} className="rounded-md px-2 py-0.5 text-xs text-text-secondary" style={{ backgroundColor: experience.color + "15" }}>{tag}</span>
         ))}
       </div>
-      <AnimatePresence>
-        {expanded && experience.expandedDetailsKey && (
-          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} className="overflow-hidden">
-            <p className="mt-4 border-t border-card-border pt-4 text-sm text-text-secondary">{t(experience.expandedDetailsKey)}</p>
-            <p className="mt-2 text-xs text-text-muted">{experience.years}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
+      {experience.expandedDetailsKey && (
+        <div>
+          <p className="mt-4 border-t border-card-border pt-4 text-sm text-text-secondary">{t(experience.expandedDetailsKey)}</p>
+          <p className="mt-2 text-xs text-text-muted">{experience.years}</p>
+        </div>
+      )}
+    </div>
   );
 }
