@@ -23,6 +23,9 @@ export function ProjectCard({ project }: Props) {
 
   const pages = project.pages || [{ label: "Home", path: "/" }];
   const currentPage = pages[activePage];
+  const staticPreviewUrl = pages.length === 1 ? project.image : undefined;
+  const thumbnailUrl = project.thumbnailImage || staticPreviewUrl;
+  const hasCustomThumbnail = Boolean(project.thumbnailImage);
   const currentFullUrl = currentPage.path === "/"
     ? project.liveUrl!
     : `${project.liveUrl!.replace(/\/$/, "")}${currentPage.path}`;
@@ -38,12 +41,12 @@ export function ProjectCard({ project }: Props) {
         onClick={() => setExpanded(!expanded)}
         className="flex w-full flex-col gap-4 p-5 text-left sm:flex-row sm:items-center"
       >
-        <div className="h-20 w-full flex-shrink-0 overflow-hidden rounded-lg bg-surface sm:h-[72px] sm:w-[120px]">
+        <div className={`h-20 w-full flex-shrink-0 overflow-hidden rounded-lg sm:h-[72px] sm:w-[120px] ${hasCustomThumbnail ? "bg-[#f4faf8]" : "bg-surface"}`}>
           {project.liveUrl ? (
             <img
-              src={getThumbnailUrl(project.liveUrl)}
+              src={thumbnailUrl || getThumbnailUrl(project.liveUrl)}
               alt={project.name}
-              className="h-full w-full object-cover object-top"
+              className={`h-full w-full ${hasCustomThumbnail ? "object-contain p-2" : "object-cover object-top"}`}
               loading="lazy"
             />
           ) : (
@@ -124,7 +127,7 @@ export function ProjectCard({ project }: Props) {
                 >
                   <ScreenshotImage
                     key={`${project.slug}-${activePage}`}
-                    url={getScreenshotUrl(project.liveUrl!, currentPage.path)}
+                    url={staticPreviewUrl || getScreenshotUrl(project.liveUrl!, currentPage.path)}
                     alt={`${project.name} — ${currentPage.label}`}
                     projectName={project.name}
                   />
