@@ -85,7 +85,7 @@ public/              # Images, videos, and static assets
 
 ### Prerequisites
 
-- Node.js
+- Node.js 20.9 or later
 - npm
 
 ### Installation
