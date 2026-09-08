@@ -1,103 +1,115 @@
 {
   "nav": {
-    "work": "Work",
+    "work": "Projects",
     "about": "About",
-    "experience": "Experience",
-    "techStack": "Tech Stack",
-    "letsTalk": "Let's Talk"
+    "experience": "Career",
+    "techStack": "Skills",
+    "letsTalk": "Contact",
+    "toggleMenu": "Open or close the menu"
   },
   "hero": {
-    "badge": "Available for new opportunities",
-    "title1": "Building",
-    "titleHighlight": "full-stack",
-    "title2": "experiences.",
-    "subtitle": "Fullstack developer with 6 years of experience building performant web applications with modern architectures.",
-    "viewProjects": "View Projects",
+    "badge": "Available for full-time roles or freelance work · Open to international relocation",
+    "title1": "React / Next.js",
+    "titleHighlight": "frontend",
+    "title2": "& full‑stack developer.",
+    "subtitle": "Frontend developer with 6 years of professional experience, also building full-stack web and mobile products.",
+    "viewProjects": "View projects",
     "terminal": {
-      "role": "Fullstack Developer",
-      "experience": "6+ years",
-      "location": "Seoul",
+      "role": "React / Next.js developer",
+      "experience": "6 years of professional experience",
+      "location": "Seoul · open to international relocation",
       "passion": "Turning ideas into products"
     }
   },
   "about": {
-    "title": "About Me",
-    "bio": "I moved from France to Seoul to build software for a global audience. Over 6 years I've shipped SaaS platforms, e-commerce stores, and data-driven dashboards, handling everything from database design to pixel-perfect UIs.",
+    "title": "About",
+    "bio": "I gained 6 years of professional frontend experience at MobSuccess, GiFi, and Simform. Now based in Seoul, I also build personal web and mobile products end to end, from data modelling to deployment.",
     "stats": {
-      "years": "Years exp.",
+      "years": "Years of experience",
       "projects": "Projects",
       "technologies": "Technologies"
     }
   },
   "experience": {
-    "title": "Experience",
-    "freelance": {
-      "role": "Freelance Fullstack Developer",
-      "description": "Shipped SaaS products and consumer apps end-to-end, from database schemas to responsive UIs.",
-      "details": "Built Cafes in Seoul (cafe discovery with Kakao Maps + mobile app via Capacitor) and Bouldrr (climbing tracker with session analytics). Solo dev on each project: design, frontend, backend, deployment."
+    "title": "Career",
+    "independent": {
+      "company": "Personal projects",
+      "role": "Web and mobile product development",
+      "duration": "Ongoing",
+      "years": "Alongside my professional career",
+      "description": "Designing and building personal products alongside moving to Seoul and learning Korean.",
+      "details": "I created Cafes in Seoul, Bouldrr, and Kusodu, handling product design, frontend, backend, and deployment. These are personal projects, not client engagements."
     },
     "simform": {
-      "role": "Frontend Developer",
-      "description": "Built enterprise dashboards and reusable component libraries for international B2B clients.",
-      "details": "Developed data-heavy React dashboards with TypeScript. Created a shared design system used across 3 client projects, cutting UI dev time significantly."
+      "role": "Senior UI Developer",
+      "duration": "3 years",
+      "description": "Built business dashboards and reusable component libraries for international B2B clients.",
+      "details": "Developed data-heavy React dashboards with TypeScript and created a design system shared across three client projects to speed up interface development."
     },
     "gifi": {
-      "role": "Web Developer",
-      "description": "Worked on the e-commerce platform of France's largest home & DIY retailer (900+ stores).",
-      "details": "Improved product listing performance and built internal inventory management tools. Focused on page speed and conversion-friendly UX."
+      "role": "Frontend Developer",
+      "duration": "1 year",
+      "description": "Worked on GiFi’s e-commerce platform for a retail network of more than 900 stores.",
+      "details": "Improved product-listing performance and built internal stock-management tools, with a focus on page speed and the purchasing journey."
     },
     "mobsuccess": {
       "role": "Frontend Developer",
-      "description": "Built the Gifi marketplace frontend as a React developer within a mobile marketing agency.",
-      "details": "Developed the e-commerce marketplace interface for Gifi using React. First professional role, learned to ship production code in a fast-paced agency environment."
+      "duration": "2 years",
+      "description": "Built web interfaces and contributed to client projects at a mobile marketing agency.",
+      "details": "Developed React interfaces and gained my first experience shipping production code in an agency environment."
     }
   },
   "projects": {
-    "title": "Selected Work",
-    "subtitle": "Personal projects & experiments",
+    "title": "Projects",
+    "subtitle": "Personal projects and experiments",
     "kusodu": {
-      "description": "Ad-free Sudoku app for iPhone and iPad, built with Swift and published on the App Store. Includes notes, error tracking, statistics, and progressive hints."
+      "description": "An ad-free Sudoku app for iPhone and iPad, built with Swift and published on the App Store. It includes notes, error tracking, statistics, and progressive hints."
     },
     "cafesInSeoul": {
-      "description": "Discover the best cafes in Seoul. Search by neighborhood, read reviews, and browse ratings. Built with Next.js, Supabase, and Kakao Maps."
+      "description": "Discover cafés in Seoul, search by neighbourhood, and browse reviews and ratings. Built with Next.js, Supabase, and Kakao Maps."
     },
     "bouldrr": {
-      "description": "Track your bouldering sessions, visualize progression, and share videos with the climbing community."
+      "description": "Track your bouldering sessions, view your progress, and share videos with the climbing community."
     },
     "draftPredictions": {
-      "description": "Predict Karmine Corp draft picks during League of Legends LEC matches."
+      "description": "Predict Karmine Corp’s champion picks during League of Legends LEC matches."
     },
     "woeve": {
-      "description": "Agency site for a product design studio. Bilingual FR/EN, scroll-driven animations."
+      "description": "A bilingual French-English website for a product design studio, with scroll-triggered animations."
     }
   },
   "techStack": {
-    "title": "Tech Stack",
-    "subtitle": "Click a skill to explore"
+    "title": "Skills",
+    "subtitle": "Select a skill to learn more",
+    "experienceYears": "{count, plural, one {# year} other {# years}}"
   },
   "skills": {
-    "react": { "description": "My primary UI library. Built complex dashboards, real-time feeds, and interactive maps with hooks, context, and custom state patterns." },
-    "nextjs": { "description": "Go-to framework for every project. App Router, server components, API routes, ISR. Used on Cafes in Seoul, Bouldrr, and this portfolio." },
-    "typescript": { "description": "Write everything in TS. Generics, discriminated unions, strict mode. Catches bugs before they hit production." },
-    "supabase": { "description": "Auth, Postgres, real-time subscriptions, storage, edge functions. My default backend for shipping fast." },
-    "tailwind": { "description": "Utility-first CSS for rapid prototyping and production. Custom design tokens, responsive layouts, dark themes." },
-    "javascript": { "description": "6+ years across frontend and backend. ES6+, async patterns, Node.js, browser APIs." },
-    "postgresql": { "description": "Complex queries, migrations, row-level security, stored functions. Design schemas that scale." },
-    "vercel": { "description": "Seamless CI/CD, preview deployments, edge functions. Deploy and forget." },
-    "git": { "description": "Feature branches, rebasing, clean commit history. Every project, every day." },
-    "docker": { "description": "Dev environments, compose stacks, self-hosted services. Run my own infra at home." },
-    "restapi": { "description": "Design, build, and document APIs. Auth middleware, rate limiting, versioning." },
-    "auth": { "description": "JWT, OAuth, session tokens, role-based access. Shipped auth flows for multiple production apps." }
+    "react": { "description": "My main UI library. I use Hooks, Context, and Zustand to build complex dashboards, real-time feeds, and interactive maps." },
+    "nextjs": { "description": "My main framework: App Router, Server Components, API routes, and ISR. Used for Cafes in Seoul, Bouldrr, and this portfolio." },
+    "typescript": { "description": "I write my projects in TypeScript, using strict mode, generics, and discriminated unions to catch errors earlier." },
+    "supabase": { "description": "Authentication, PostgreSQL, real-time subscriptions, storage, and Edge Functions. I use it as the main backend for several projects." },
+    "tailwind": { "description": "Utility-first CSS for prototyping and production, with custom design tokens, responsive layouts, and dark themes." },
+    "javascript": { "description": "More than 6 years of frontend and backend practice with ES6+, asynchronous programming, Node.js, and browser APIs." },
+    "postgresql": { "description": "Complex queries, migrations, row-level security, and stored functions. I design schemas that remain easy to evolve." },
+    "vercel": { "description": "Continuous deployment, preview environments, and Edge Functions for getting applications online quickly." },
+    "git": { "description": "Feature branches, rebasing, and readable commit histories. I use Git every day across my projects." },
+    "docker": { "description": "Development environments, Docker Compose stacks, and self-hosted services. I also run my own infrastructure at home." },
+    "restapi": { "description": "Design, development, and documentation of REST APIs, including authentication, rate limiting, and versioning." },
+    "auth": { "description": "JWT, OAuth, sessions, and role-based access control for securing web and mobile applications." }
   },
   "contact": {
-    "title": "Got a project in mind?",
-    "titleHighlight": "Let's make it happen.",
+    "title": "Have a project in mind?",
+    "titleHighlight": "Let’s talk.",
     "form": {
       "name": "Name *",
       "company": "Company",
       "email": "Email *",
       "message": "Message *",
-      "send": "Send Message"
+      "send": "Send",
+      "error": "Something went wrong. Please try again.",
+      "protectedBy": "Protected by reCAPTCHA",
+      "privacy": "Privacy",
+      "terms": "Terms"
     }
   },
   "footer": {

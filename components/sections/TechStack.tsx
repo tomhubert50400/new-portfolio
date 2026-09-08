@@ -43,7 +43,9 @@ export function TechStack() {
               <div className="flex items-center justify-center gap-3">
                 <span className="text-2xl">{selected.icon}</span>
                 <span className="text-lg font-bold" style={{ color: selected.color }}>{selected.name}</span>
-                <span className="rounded-md bg-surface px-2 py-0.5 text-xs text-text-muted">{selected.yearsOfExperience} years</span>
+                <span className="rounded-md bg-surface px-2 py-0.5 text-xs text-text-muted">
+                  {tSection("experienceYears", { count: selected.yearsOfExperience })}
+                </span>
               </div>
               <p className="mt-3 text-sm text-text-secondary">{t(selected.descriptionKey)}</p>
               <div className="mt-3 flex flex-wrap justify-center gap-1.5">
@@ -86,6 +88,8 @@ function MarqueeRow({ skills: items, direction, selected, onSelect }: {
 }
 
 function SkillBadge({ skill, isSelected, onClick }: { skill: Skill; isSelected: boolean; onClick: () => void }) {
+  const t = useTranslations("techStack");
+
   return (
     <button
       onClick={onClick}
@@ -105,7 +109,7 @@ function SkillBadge({ skill, isSelected, onClick }: { skill: Skill; isSelected: 
       </span>
       <div className="text-left">
         <div className="text-sm font-semibold" style={{ color: skill.color }}>{skill.name}</div>
-        <div className="text-[10px] text-text-muted">{skill.yearsOfExperience} years</div>
+        <div className="text-[10px] text-text-muted">{t("experienceYears", { count: skill.yearsOfExperience })}</div>
       </div>
     </button>
   );

@@ -12,9 +12,12 @@ export interface Project {
 
 export interface Experience {
   company: string;
+  companyKey?: string;
   roleKey: string;
   duration: string;
+  durationKey?: string;
   years: string;
+  yearsKey?: string;
   descriptionKey: string;
   tags: string[];
   expandedDetailsKey?: string;

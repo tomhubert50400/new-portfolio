@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tom Hubert | Fullstack Developer in Seoul, South Korea",
-  description: "Fullstack developer based in Seoul with 6+ years of experience shipping React, Next.js, and Supabase applications. Available for freelance and full-time roles.",
+  title: "Tom Hubert | React / Next.js Developer",
+  description: "Frontend developer with 6 years of professional experience, also building independent full-stack React and Next.js products. Open to employment, freelance work, and international relocation.",
 };
 
 export default function RootLayout({

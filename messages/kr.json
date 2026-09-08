@@ -3,104 +3,116 @@
     "work": "프로젝트",
     "about": "소개",
     "experience": "경력",
-    "techStack": "기술 스택",
-    "letsTalk": "연락하기"
+    "techStack": "기술",
+    "letsTalk": "연락하기",
+    "toggleMenu": "메뉴 열기 또는 닫기"
   },
   "hero": {
-    "badge": "새로운 기회를 찾고 있습니다",
-    "title1": "풀스택",
-    "titleHighlight": "경험을",
-    "title2": "만듭니다.",
-    "subtitle": "6년 경력의 풀스택 개발자로서 현대적인 아키텍처를 활용하여 고성능 웹 애플리케이션을 개발합니다.",
+    "badge": "정규직·프리랜서 모두 가능 · 해외 이주 가능",
+    "title1": "React / Next.js",
+    "titleHighlight": "프론트엔드",
+    "title2": "및 풀스택 개발자",
+    "subtitle": "6년의 프론트엔드 실무 경력을 바탕으로 풀스택 웹·모바일 제품도 직접 개발하고 있습니다.",
     "viewProjects": "프로젝트 보기",
     "terminal": {
-      "role": "풀스택 개발자",
-      "experience": "6년+",
-      "location": "서울",
-      "passion": "아이디어를 제품으로"
+      "role": "React / Next.js 개발자",
+      "experience": "프론트엔드 실무 경력 6년",
+      "location": "서울 거주 · 해외 이주 가능",
+      "passion": "아이디어를 실제 제품으로"
     }
   },
   "about": {
     "title": "소개",
-    "bio": "글로벌 사용자를 위한 소프트웨어를 만들기 위해 프랑스에서 서울로 왔습니다. 6년간 SaaS 플랫폼, 이커머스 스토어, 데이터 기반 대시보드를 개발하며 데이터베이스 설계부터 픽셀 단위 UI까지 모든 과정을 담당해 왔습니다.",
+    "bio": "MobSuccess, GiFi, Simform에서 6년간 프론트엔드 실무 경험을 쌓았습니다. 현재 서울에 거주하며 데이터 모델링부터 배포까지 개인 웹·모바일 제품도 직접 개발하고 있습니다.",
     "stats": {
-      "years": "년 경력",
+      "years": "실무 경력",
       "projects": "프로젝트",
       "technologies": "기술"
     }
   },
   "experience": {
     "title": "경력",
-    "freelance": {
-      "role": "프리랜서 풀스택 개발자",
-      "description": "데이터베이스 스키마부터 반응형 UI까지, SaaS 제품과 소비자 앱을 처음부터 끝까지 개발.",
-      "details": "Cafes in Seoul (카카오맵 + Capacitor 모바일 앱을 활용한 카페 탐색)과 Bouldrr (세션 분석 기능이 있는 클라이밍 트래커)를 개발. 각 프로젝트의 유일한 개발자로서 디자인, 프론트엔드, 백엔드, 배포를 담당."
+    "independent": {
+      "company": "개인 프로젝트",
+      "role": "웹·모바일 제품 개발",
+      "duration": "지속적으로 진행",
+      "years": "직장 생활과 병행",
+      "description": "서울 이주와 한국어 학습을 병행하며 개인 웹·모바일 제품을 기획하고 개발했습니다.",
+      "details": "Cafes in Seoul, Bouldrr, Kusodu의 제품 기획, 프론트엔드, 백엔드, 배포를 직접 담당했습니다. 모두 고객사가 아닌 개인 프로젝트입니다."
     },
     "simform": {
-      "role": "프론트엔드 개발자",
-      "description": "국제 B2B 클라이언트를 위한 엔터프라이즈 대시보드와 재사용 가능한 컴포넌트 라이브러리를 구축.",
-      "details": "TypeScript를 활용한 데이터 중심의 React 대시보드 개발. 3개 클라이언트 프로젝트에서 사용된 공유 디자인 시스템을 구축하여 UI 개발 시간을 크게 단축."
+      "role": "Senior UI Developer",
+      "duration": "3년",
+      "description": "해외 B2B 고객을 위한 업무용 대시보드와 재사용 가능한 컴포넌트 라이브러리를 개발했습니다.",
+      "details": "TypeScript 기반의 데이터 중심 React 대시보드를 개발하고, 세 개의 고객 프로젝트에서 함께 사용하는 디자인 시스템을 구축해 UI 개발 속도를 높였습니다."
     },
     "gifi": {
-      "role": "웹 개발자",
-      "description": "프랑스 최대 홈 & DIY 유통업체(900개 이상 매장)의 이커머스 플랫폼 개발.",
-      "details": "상품 목록 성능을 개선하고 내부 재고 관리 도구를 구축. 페이지 속도와 전환율 중심의 UX에 집중."
+      "role": "프론트엔드 개발자",
+      "duration": "1년",
+      "description": "900개 이상의 매장을 운영하는 GiFi의 이커머스 플랫폼 개발에 참여했습니다.",
+      "details": "상품 목록의 성능을 개선하고 사내용 재고 관리 도구를 개발했습니다. 페이지 속도와 구매 과정 개선에도 집중했습니다."
     },
     "mobsuccess": {
       "role": "프론트엔드 개발자",
-      "description": "모바일 마케팅 에이전시에서 React 개발자로 Gifi 마켓플레이스 프론트엔드 구축.",
-      "details": "React를 사용하여 Gifi의 이커머스 마켓플레이스 인터페이스를 개발. 첫 번째 직장으로, 빠른 에이전시 환경에서 프로덕션 코드 배포를 경험."
+      "duration": "2년",
+      "description": "모바일 마케팅 에이전시에서 웹 인터페이스와 고객 프로젝트를 개발했습니다.",
+      "details": "React 인터페이스를 개발하며 에이전시 환경에서 프로덕션 코드를 배포하는 경험을 쌓았습니다."
     }
   },
   "projects": {
     "title": "프로젝트",
-    "subtitle": "개인 프로젝트 및 실험",
+    "subtitle": "개인 프로젝트와 실험",
     "kusodu": {
-      "description": "\uad11\uace0 \uc5c6\ub294 iPhone/iPad Sudoku \uc571\uc73c\ub85c, Swift\ub85c \uac1c\ubc1c\ud558\uace0 App Store\uc5d0 \ucd9c\uc2dc\ud588\uc2b5\ub2c8\ub2e4. \uba54\ubaa8, \uc624\ub958 \ucd94\uc801, \ud1b5\uacc4, \uc810\uc9c4\uc801 \ud78c\ud2b8\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4."
+      "description": "Swift로 개발해 App Store에 출시한 광고 없는 iPhone·iPad용 스도쿠 앱입니다. 메모, 오류 추적, 통계, 단계별 힌트 기능을 제공합니다."
     },
     "cafesInSeoul": {
-      "description": "서울 최고의 카페를 발견하세요. 동네별 검색, 리뷰 읽기, 평점 확인. Next.js, Supabase, 카카오맵으로 구축."
+      "description": "서울의 카페를 지역별로 검색하고 리뷰와 평점을 확인할 수 있는 서비스입니다. Next.js, Supabase, Kakao Maps로 개발했습니다."
     },
     "bouldrr": {
-      "description": "볼더링 세션을 기록하고, 성장 과정을 시각화하고, 클라이밍 커뮤니티와 영상을 공유하세요."
+      "description": "볼더링 세션을 기록하고 성장 과정을 확인하며 클라이밍 커뮤니티에 영상을 공유할 수 있는 서비스입니다."
     },
     "draftPredictions": {
-      "description": "리그 오브 레전드 LEC 경기에서 Karmine Corp의 드래프트 픽을 예측하세요."
+      "description": "League of Legends LEC 경기에서 Karmine Corp의 챔피언 선택을 예측하는 서비스입니다."
     },
     "woeve": {
-      "description": "프로덕트 디자인 스튜디오의 에이전시 사이트. 불어/영어 지원, 스크롤 기반 애니메이션."
+      "description": "제품 디자인 스튜디오를 위한 프랑스어·영어 웹사이트로, 스크롤에 반응하는 애니메이션을 적용했습니다."
     }
   },
   "techStack": {
-    "title": "기술 스택",
-    "subtitle": "기술을 클릭하여 자세히 보기"
+    "title": "기술",
+    "subtitle": "기술을 선택하면 자세한 내용을 볼 수 있습니다",
+    "experienceYears": "{count}년"
   },
   "skills": {
-    "react": { "description": "주력 UI 라이브러리. 훅, 컨텍스트, 커스텀 상태 패턴으로 복잡한 대시보드, 실시간 피드, 인터랙티브 지도를 구축." },
-    "nextjs": { "description": "모든 프로젝트의 기본 프레임워크. App Router, 서버 컴포넌트, API 라우트, ISR. Cafes in Seoul, Bouldrr, 이 포트폴리오에 사용." },
-    "typescript": { "description": "모든 코드를 TS로 작성. 제네릭, 판별 유니온, 스트릭트 모드. 프로덕션 전에 버그를 잡아냄." },
-    "supabase": { "description": "인증, Postgres, 실시간 구독, 스토리지, 엣지 함수. 빠른 출시를 위한 기본 백엔드." },
-    "tailwind": { "description": "빠른 프로토타이핑과 프로덕션을 위한 유틸리티 기반 CSS. 커스텀 디자인 토큰, 반응형 레이아웃, 다크 테마." },
-    "javascript": { "description": "프론트엔드와 백엔드에서 6년 이상. ES6+, 비동기 패턴, Node.js, 브라우저 API." },
-    "postgresql": { "description": "복잡한 쿼리, 마이그레이션, 행 수준 보안, 저장 함수. 확장 가능한 스키마 설계." },
-    "vercel": { "description": "원활한 CI/CD, 프리뷰 배포, 엣지 함수. 배포하고 잊어버리기." },
-    "git": { "description": "피처 브랜치, 리베이스, 깨끗한 커밋 히스토리. 매일, 모든 프로젝트에서." },
-    "docker": { "description": "개발 환경, compose 스택, 셀프호스팅 서비스. 집에서 직접 인프라를 운영." },
-    "restapi": { "description": "API 설계, 구축, 문서화. 인증 미들웨어, 속도 제한, 버저닝." },
-    "auth": { "description": "JWT, OAuth, 세션 토큰, 역할 기반 접근. 여러 프로덕션 앱에서 인증 플로우를 구축." }
+    "react": { "description": "주로 사용하는 UI 라이브러리입니다. Hooks, Context, Zustand로 복잡한 대시보드와 실시간 피드, 인터랙티브 지도를 개발했습니다." },
+    "nextjs": { "description": "주로 사용하는 프레임워크입니다. App Router, Server Components, API Routes, ISR을 활용해 Cafes in Seoul, Bouldrr와 이 포트폴리오를 개발했습니다." },
+    "typescript": { "description": "Strict Mode, 제네릭, 판별 유니온을 활용해 오류를 일찍 발견하고 안정적으로 코드를 관리합니다." },
+    "supabase": { "description": "인증, PostgreSQL, 실시간 구독, 스토리지, Edge Functions를 여러 프로젝트의 주요 백엔드로 사용했습니다." },
+    "tailwind": { "description": "빠른 프로토타이핑과 실제 서비스 개발에 사용하는 유틸리티 기반 CSS입니다. 커스텀 디자인 토큰과 반응형 레이아웃, 다크 테마를 구현했습니다." },
+    "javascript": { "description": "ES6+, 비동기 프로그래밍, Node.js, 브라우저 API를 활용한 프론트엔드·백엔드 개발 경험이 6년 이상입니다." },
+    "postgresql": { "description": "복잡한 쿼리, 마이그레이션, 행 수준 보안과 저장 함수를 다루며 유지보수하기 쉬운 스키마를 설계합니다." },
+    "vercel": { "description": "지속적 배포, 미리보기 환경, Edge Functions를 활용해 애플리케이션을 빠르게 배포합니다." },
+    "git": { "description": "기능 브랜치, 리베이스, 읽기 쉬운 커밋 기록을 사용하며 모든 프로젝트에서 Git으로 변경 사항을 관리합니다." },
+    "docker": { "description": "개발 환경, Docker Compose 스택, 셀프 호스팅 서비스를 구성하며 자택 서버도 직접 운영합니다." },
+    "restapi": { "description": "인증, 요청 제한, 버전 관리를 포함한 REST API를 설계하고 개발하며 문서화합니다." },
+    "auth": { "description": "JWT, OAuth, 세션, 역할 기반 접근 제어를 활용해 웹·모바일 애플리케이션을 보호합니다." }
   },
   "contact": {
-    "title": "프로젝트가 있으신가요?",
-    "titleHighlight": "함께 실현해 봅시다.",
+    "title": "함께할 프로젝트가 있으신가요?",
+    "titleHighlight": "편하게 연락해 주세요.",
     "form": {
       "name": "이름 *",
       "company": "회사",
       "email": "이메일 *",
       "message": "메시지 *",
-      "send": "메시지 보내기"
+      "send": "보내기",
+      "error": "오류가 발생했습니다. 다시 시도해 주세요.",
+      "protectedBy": "reCAPTCHA로 보호됨",
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관"
     }
   },
   "footer": {
-    "copyright": "모든 권리 보유."
+    "copyright": "모든 권리를 보유합니다."
   }
 }
