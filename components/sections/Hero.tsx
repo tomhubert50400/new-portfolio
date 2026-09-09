@@ -39,7 +39,7 @@ export function Hero() {
             <button onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="whitespace-nowrap rounded-pill border border-card-border bg-card px-6 py-3 text-sm font-medium text-text-primary transition-all hover:scale-105 hover:border-accent-cyan/50">
               {t("viewProjects")} ↓
             </button>
-            <a href="/Tom-Hubert-CV.pdf" download="Tom-Hubert-CV.pdf" className="whitespace-nowrap rounded-pill border border-accent-cyan/40 bg-accent-cyan/10 px-6 py-3 text-sm font-medium text-accent-cyan transition-all hover:scale-105 hover:border-accent-cyan">
+            <a href="/Hubert_Tom_CV.pdf" download="Hubert_Tom_CV.pdf" className="whitespace-nowrap rounded-pill border border-accent-cyan/40 bg-accent-cyan/10 px-6 py-3 text-sm font-medium text-accent-cyan transition-all hover:scale-105 hover:border-accent-cyan">
               {t("downloadCv")} ↓
             </a>
             <a href="https://github.com/tomhubert50400" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-card-border text-text-muted transition-colors hover:border-text-secondary hover:text-text-primary">

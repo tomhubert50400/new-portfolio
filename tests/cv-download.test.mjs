@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const resumePath = new URL("../public/Tom-Hubert-CV.pdf", import.meta.url);
+const resumePath = new URL("../public/Hubert_Tom_CV.pdf", import.meta.url);
 const heroPath = new URL("../components/sections/Hero.tsx", import.meta.url);
 const localePaths = ["fr", "en", "kr"].map(
   (locale) => new URL(`../messages/${locale}.json`, import.meta.url),
@@ -16,8 +16,8 @@ test("the hero exposes a translated downloadable public resume", async () => {
   ]);
 
   assert.equal(resume.subarray(0, 4).toString(), "%PDF");
-  assert.match(hero, /href="\/Tom-Hubert-CV\.pdf"/);
-  assert.match(hero, /download="Tom-Hubert-CV\.pdf"/);
+  assert.match(hero, /href="\/Hubert_Tom_CV\.pdf"/);
+  assert.match(hero, /download="Hubert_Tom_CV\.pdf"/);
   assert.match(hero, /t\("downloadCv"\)/);
 
   for (const localeFile of localeFiles) {
