@@ -14,7 +14,8 @@
     "title2": "및 풀스택 개발자",
     "subtitle": "6년의 프론트엔드 실무 경력을 바탕으로 풀스택 웹·모바일 제품도 직접 개발하고 있습니다.",
     "viewProjects": "프로젝트 보기",
-    "downloadCv": "이력서 다운로드 (프랑스어)",
+    "downloadCvFr": "프랑스어 이력서",
+    "downloadCvEn": "영어 이력서",
     "terminal": {
       "role": "React / Next.js 개발자",
       "experience": "프론트엔드 실무 경력 6년",
