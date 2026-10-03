@@ -10,10 +10,16 @@ function Particles() {
 
   const positions = useMemo(() => {
     const arr = new Float32Array(count * 3);
+    // Seeded pseudo-random positions remain stable across render retries.
+    let seed = 42;
+    const nextPosition = () => {
+      seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+      return (seed / 4294967296 - 0.5) * 10;
+    };
     for (let i = 0; i < count; i++) {
-      arr[i * 3] = (Math.random() - 0.5) * 10;
-      arr[i * 3 + 1] = (Math.random() - 0.5) * 10;
-      arr[i * 3 + 2] = (Math.random() - 0.5) * 10;
+      arr[i * 3] = nextPosition();
+      arr[i * 3 + 1] = nextPosition();
+      arr[i * 3 + 2] = nextPosition();
     }
     return arr;
   }, []);

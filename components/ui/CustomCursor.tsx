@@ -11,9 +11,8 @@ export function CustomCursor() {
   useEffect(() => {
     const hasPointer = window.matchMedia("(pointer: fine)").matches;
     if (!hasPointer) return;
-    setVisible(true);
 
-    function onMove(e: MouseEvent) { setPos({ x: e.clientX, y: e.clientY }); }
+    function onMove(e: MouseEvent) { setVisible(true); setPos({ x: e.clientX, y: e.clientY }); }
     function onOver(e: MouseEvent) {
       const target = e.target as HTMLElement;
       if (target.closest("a, button, [role='button'], input, textarea")) setHovering(true);

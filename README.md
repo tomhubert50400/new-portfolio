@@ -107,7 +107,7 @@ NEXT_PUBLIC_RECAPTCHA_SITE_KEY=
 RECAPTCHA_SECRET_KEY=
 ```
 
-The presentation pages can be developed without these values, but contact submissions require valid Gmail and reCAPTCHA credentials. Never commit `.env.local`.
+The presentation pages can be developed without these values, but contact submissions require valid Gmail and reCAPTCHA credentials. Never commit `.env.local`. The contact API fails closed with HTTP 503 if the reCAPTCHA secret or Gmail credentials are missing. Configure all four values before enabling the form in production. Tokens must be reCAPTCHA v3 tokens for the `contact` action with a score of at least 0.5; verification outages do not send mail.
 
 ### Development
 
